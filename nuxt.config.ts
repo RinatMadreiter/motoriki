@@ -11,16 +11,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
-
-
-  vite: {
-    optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit'
-      ]
-    }
-  },
   css: ['~/assets/css/main.css'],
 
   mdc: {
@@ -35,6 +25,15 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/'
+      ]
+    }
+  },
+
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit'
       ]
     }
   },
