@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    }
+  },
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
@@ -12,14 +19,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  vite: {
-    optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit'
-      ]
-    }
-  },
   css: ['~/assets/css/main.css'],
 
   mdc: {
