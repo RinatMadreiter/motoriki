@@ -224,6 +224,7 @@ useSeoMeta({
     <USeparator />
 
     <UPageCTA
+      id="contact"
       v-bind="page.cta"
       variant="naked"
       class="overflow-hidden @container"

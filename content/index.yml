@@ -1,24 +1,17 @@
 seo:
   title: Nuxt Landing Template
-  description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
-title: AI-Powered Developer Productivity Platform
-description: Boost your coding productivity with AI-driven insights that tell you when and how to code most efficiently.
+  description: Motopädagogische Eltern-Kind-Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch motorische Fähigkeiten, Selbstvertrauen und soziale Kompetenzen stärken, ganz ohne Leistungsdruck.
+title: MotoRiki Bewegen. Lachen. Wachsen.
+description: Motopädagogische Eltern-Kind-Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch motorische Fähigkeiten, Selbstvertrauen und soziale Kompetenzen stärken, ganz ohne Leistungsdruck.
 hero:
   links:
-    - label: Get started
+    - label: Jetzt Platz sichern
       icon: i-lucide-arrow-right
       trailing: true
       color: primary
-      to: https://ui.nuxt.com/docs/getting-started/installation/nuxt
-      target: _blank
+      to: '#contact'
+      target: _self
       size: xl
-    - label: Clone on GitHub
-      icon: i-simple-icons-github
-      size: xl
-      color: neutral
-      variant: outline
-      to: https://github.com/nuxt-ui-templates/landing
-      target: _blank
 section:
   title: '[Revolutionize]{.text-primary} your coding experience'
   description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
