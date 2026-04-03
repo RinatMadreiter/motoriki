@@ -6,3 +6,42 @@
 @theme {
   --font-sans: 'Public Sans', sans-serif;
 }
+
+
+@theme static {
+  /* primary = brand (green) */
+  --color-brand-50:  #E3EBD7;
+  --color-brand-100: #D7E1C5;
+  --color-brand-200: #C3D2A3;
+  --color-brand-300: #A8BF7B;
+  --color-brand-400: #8EA65F;
+  --color-brand-500: #6F8A4A;  /* base */
+  --color-brand-600: #5B713D;
+  --color-brand-700: #465B30;  /* dark */
+  --color-brand-800: #394827;
+  --color-brand-900: #2B351D;
+
+  /* secondary = sand (beige) */
+  --color-sand-50:  #FBF4E7;
+  --color-sand-100: #F4E4C9;
+  --color-sand-200: #EED4AE;
+  --color-sand-300: #E1BE8A;
+  --color-sand-400: #D5AB72;
+  --color-sand-500: #C79F6F;
+  --color-sand-600: #B28756;
+  --color-sand-700: #946A40;
+  --color-sand-800: #765434;
+  --color-sand-900: #5A4028;
+
+  /* neutral = warm (grays) */
+  --color-warm-50:  #F6F3EE;
+  --color-warm-100: #E8E1D6;
+  --color-warm-200: #D5C9B8;
+  --color-warm-300: #BCA88F;
+  --color-warm-400: #A0978A;
+  --color-warm-500: #7F7160;
+  --color-warm-600: #64594C;
+  --color-warm-700: #4F463B;
+  --color-warm-800: #3D372F;
+  --color-warm-900: #2B251F;
+}
