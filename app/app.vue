@@ -28,9 +28,16 @@ useSeoMeta({
     <AppHeader />
 
     <UMain>
+      <MovingStickMan />
       <NuxtPage />
     </UMain>
 
     <AppFooter />
   </UApp>
 </template>
+
+<style>
+main {
+position: relative;
+}
+</style>
