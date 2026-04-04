@@ -251,6 +251,6 @@ useSeoMeta({
 
       <LazyStarsBg /> 
     </UPageCTA>
-    <JumpingText />
+    <LazyJumpingText />
   </div>
 </template>
