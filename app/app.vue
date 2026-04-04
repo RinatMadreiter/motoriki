@@ -28,7 +28,6 @@ useSeoMeta({
     <AppHeader />
 
     <UMain>
-      <MovingStickMan />
       <NuxtPage />
     </UMain>
 
