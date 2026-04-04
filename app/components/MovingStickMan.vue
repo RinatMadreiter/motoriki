@@ -56,6 +56,7 @@
 <style>
 svg#stickman {
   position: fixed;
+  top: 15vh;
   right: 0;
   z-index: 20;
   /* your scroll-driven animation props here, e.g.: */
@@ -66,15 +67,30 @@ svg#stickman {
   animation-fill-mode: both;
   animation-timeline: scroll(root);
   animation-range: 0% 100%;
+
+  @media (max-width: 500px) {
+  width: 40%;
+  top: 11vh;
+  animation-name: cartwheel-mobile;
 }
+}
+
 
 @keyframes cartwheel {
   from {
-    rotate: 360deg;
+    transform: translateX(0) translateY(0) rotate(348deg);
   }
-
   to {
-    rotate: 0deg;
+    transform: translateX(-82vw) translateY(50vh) rotate(-14deg);
+  }
+}
+
+@keyframes cartwheel-mobile {
+  from {
+    transform: translateX(0) translateY(0) rotate(360deg);
+  }
+  to {
+    transform: translateX(-62vw) translateY(50vh)  rotate(-10deg);
   }
 }
 </style>
