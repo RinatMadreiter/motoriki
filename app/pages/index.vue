@@ -34,9 +34,6 @@ useSeoMeta({
         title: 'max-w-3xl mx-auto'
       }"
     >
-      <template #top>
-        <HeroBackground />
-      </template>
 
       <template #title>
         <MDC
@@ -51,10 +48,10 @@ useSeoMeta({
       :features="page.section.features"
       orientation="horizontal"
       :ui="{
-        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:mr-10',
+        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:ml-10',
         features: 'gap-0'
       }"
-      reverse
+      
     >
       <template #title>
         <MDC
@@ -148,42 +145,6 @@ useSeoMeta({
       </template>
     </UPageSection>
 
-    <UPageSection
-      id="pricing"
-      class="mb-32 overflow-hidden"
-      :title="page.pricing.title"
-      :description="page.pricing.description"
-      :ui="{ title: 'text-left @container relative', description: 'text-left' }"
-    >
-      <template #title>
-        <MDC :value="page.pricing.title" />
-
-        <div class="hidden @min-[1120px]:block">
-          <UColorModeImage
-            light="/images/light/line-4.svg"
-            dark="/images/dark/line-4.svg"
-            class="absolute top-0 right-0 size-full transform translate-x-[60%]"
-          />
-        </div>
-      </template>
-
-      <UPricingPlans scale>
-        <UPricingPlan
-          v-for="(plan, index) in page.pricing.plans"
-          :key="index"
-          :title="plan.title"
-          :description="plan.description"
-          :price="plan.price"
-          :billing-period="plan.billing_period"
-          :billing-cycle="plan.billing_cycle"
-          :highlight="plan.highlight"
-          :scale="plan.highlight"
-          variant="soft"
-          :features="plan.features"
-          :button="plan.button"
-        />
-      </UPricingPlans>
-    </UPageSection>
 
     <UPageSection
       id="testimonials"
@@ -252,3 +213,9 @@ useSeoMeta({
     <LazyJumpingText />
   </div>
 </template>
+
+<style>
+h1>div {
+  color: var(--ui-primary);
+}
+</style>

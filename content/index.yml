@@ -13,21 +13,18 @@ hero:
       target: _self
       size: xl
 section:
-  title: '[Revolutionize]{.text-primary} your coding experience'
-  description: Transform your development workflow with AI-powered insights and personalized productivity optimization.
+  title: 'Typische [Sorgen]{.text-primary} von Eltern – und wie der Kurs [hilft]{.text-primary}'
+  description: 'Viele Eltern kennen diese Gedanken:'
   images:
-    mobile: '/images/macbook-mobile.svg'
-    desktop: '/images/macbook.svg'
+    mobile: '/images/gesicht.jpg'
+    desktop: '/images/gesicht.jpg'
   features:
-    - title: Optimize your focus time
-      description: Let AI identify your peak coding hours and adapt to your natural rhythm. Focus on what matters most - writing great code, while our system optimizes your productivity patterns.
-      class: border-l border-primary pl-4
-    - title: Track your best coding hours
-      description: Track when you code best with smart analytics. Get actionable insights to tackle challenging tasks during your peak performance hours.
-      class: border-l border-default pt-4 pl-4
-    - title: Improve workflow efficiency
-      description: Automate your workflow optimization from code snippets to focus management. Ship better code faster with a streamlined development process.
-      class: border-l border-default pt-4 pl-4
+    - title: „Mein Kind ist tollpatschig, stolpert oft oder wirkt unsicher.“
+      class: border-l border-primary pt-4 pb-4 pl-4
+    - title: „Es ist sehr schüchtern und traut sich wenig zu.“
+      class: border-l border-default pt-4 pb-4 pl-4
+    - title: „Es ist wild, immer in Bewegung und schnell überfordert.“
+      class: border-l border-default pt-4 pb-4 pl-4
 features:
   title: Take control of your [productivity]{.text-primary}
   description: Make every coding session count with smart analytics and workflow optimization.
@@ -81,39 +78,6 @@ steps:
       image:
         light: '/images/light/track.svg'
         dark: '/images/dark/track.svg'
-pricing:
-  title: Choose your [productivity]{.text-primary} path
-  description: Unlock AI-powered coding efficiency with our flexible plans. Whether you're a solo developer or part of a team, we have the perfect toolset to maximize your development workflow.
-  plans:
-    - title: Pro Developer
-      description: Perfect for individual developers focused on maximizing productivity.
-      price: $199
-      features:
-        - AI productivity tracking to optimize your peak coding hours
-        - Smart distraction alerts to maintain deep focus
-        - Personal code snippet library for faster development
-        - Deep Work Mode with Pomodoro timer integration
-        - Performance analytics dashboard
-        - Priority email support
-      button:
-        label: Buy now
-        color: neutral
-        variant: outline
-        to: '#'
-    - title: Team Developer
-      description: For bootstrappers and indie hackers.
-      price: $199
-      features:
-        - Everything in Pro Developer
-        - Team productivity analytics and insights
-        - Collaborative code snippet sharing
-        - Cross-team performance tracking
-        - Synchronized deep work sessions
-        - Priority team support with dedicated manager
-      button:
-        label: Buy now
-        variant: subtle
-        to: '#'
 testimonials:
   title: Join thousands of productive [developers]{.text-primary}
   description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.

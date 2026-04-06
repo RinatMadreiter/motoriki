@@ -29,7 +29,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
   <UHeader>
     <template #left>
       <NuxtLink to="/">
-        <AppLogo class="w-auto h-6 shrink-0" />
+        <p class="home-link">MotoRiki</p>
       </NuxtLink>
     </template>
 
@@ -65,3 +65,34 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     </template>
   </UHeader>
 </template>
+
+<style lang="css">
+.home-link {
+  color: var(--ui-text);
+  font-size: x-large;
+  text-decoration: none;
+  position: relative;
+  transition: color 180ms ease;
+}
+
+.home-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.12em;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-link:hover {
+  color: var(--ui-primary);
+}
+
+.home-link:hover::after {
+  transform: scaleX(1);
+}
+</style>
