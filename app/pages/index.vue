@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import JumpingText from '~/components/JumpingText.vue';
-
 const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
@@ -249,7 +247,7 @@ useSeoMeta({
         </div>
       </template>
 
-      <LazyStarsBg /> 
+      <LazyStarsBg />
     </UPageCTA>
     <LazyJumpingText />
   </div>

@@ -4,7 +4,7 @@
 @source "../../../content/**/*";
 
 @theme {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: 'Baloo 2', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
 }
 
 
