@@ -48,7 +48,7 @@ useSeoMeta({
       :features="page.section.features"
       orientation="horizontal"
       :ui="{
-        container: 'lg:px-0 2xl:px-20 mx-0 max-w-none md:ml-10',
+        container: 'lg:pr-0 lr:pl-4  mx-0 max-w-none md:mr-10',
         features: 'gap-0'
       }"
       
@@ -62,14 +62,16 @@ useSeoMeta({
       <img
         :src="page.section.images.desktop"
         :alt="page.section.title"
-        class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
-      >
+        class="hidden lg:block w-full max-w-4xl rounded-l-3xl ring-4 ring-primary -mr-[100px]"
+>
       <img
         :src="page.section.images.mobile"
         :alt="page.section.title"
-        class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
+        class="block lg:hidden  w-84 2xl:w-64 rounded-3xl mx-auto rounded-l-3xl ring-4 ring-primary" 
       >
     </UPageSection>
+
+    <UPageSection title="- und wie der Kurs hilft" :ui="{ title: 'text-primary' }"></UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 

@@ -92,7 +92,7 @@ svg#stickman.animate {
   position: fixed;
   top: 15vh;
   right: 0px;
-  z-index: -10;
+  z-index: 10;
   cursor: pointer;
   transition: transform 0.4s ease, opacity 0.4s ease;
 
