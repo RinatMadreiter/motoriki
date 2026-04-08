@@ -41,29 +41,19 @@ const courseFlow = [
 
 const benefits = [
   {
-    icon: 'i-lucide-activity',
-    title: 'Motorische Fähigkeiten',
-    text: 'Klettern, Springen, Kriechen, Balancieren und Bauen fördern Grob- und Feinmotorik, Gleichgewicht, Koordination und ein gutes Körpergefühl.'
+    icon: 'i-lucide-shield-check',
+    title: 'Geschützter Rahmen',
+    text: 'Kinder werden in einem sicheren, wertschätzenden Umfeld begleitet und dürfen in ihrem eigenen Tempo Erfahrungen sammeln.'
   },
   {
-    icon: 'i-lucide-badge-check',
-    title: 'Selbstvertrauen & Mut',
-    text: 'Eigene Ideen umsetzen, Hindernisse bewältigen und Erfolgserlebnisse in der Gruppe stärken das Vertrauen in die eigenen Fähigkeiten.'
+    icon: 'i-lucide-trees',
+    title: 'Spielerisches Ausprobieren',
+    text: 'Bewegungslandschaften, freies Experimentieren und kooperative Spiele fördern Motorik, Mut und den Umgang mit Frust.'
   },
   {
-    icon: 'i-lucide-users',
-    title: 'Soziale Kompetenzen',
-    text: 'In der Kleingruppe lernt dein Kind Rücksicht, Warten, Helfen, Regeln verstehen, Konflikte aushalten und Freundschaften knüpfen.'
-  },
-  {
-    icon: 'i-lucide-heart',
-    title: 'Emotionale Entwicklung',
-    text: 'Bewegung und Spiel helfen, Gefühle auszudrücken, Frust abzubauen und einen gesunden Umgang mit Emotionen zu entwickeln.'
-  },
-  {
-    icon: 'i-lucide-brain',
-    title: 'Konzentration & Ausdauer',
-    text: 'Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentration und Durchhaltevermögen – eine wichtige Basis für späteres Lernen.'
+    icon: 'i-lucide-baby',
+    title: 'Sinnvolle Struktur für 1-3 Jahre',
+    text: 'Eltern-Kind-Angebote greifen den natürlichen Bewegungsdrang auf und geben gleichzeitig Sicherheit, um Neues zu wagen.'
   }
 ]
 </script>
@@ -127,35 +117,87 @@ const benefits = [
       >
     </UPageSection>
 
-    <UPageSection
-       icon="i-lucide-arrow-down"
+    <template>
+      <UPageSection
+        id="features"
+        :ui="{
+          title: 'text-left @container relative flex',
+          description: 'text-left max-w-3xl',
+          body: 'mt-10',
+          container: 'max-w-6xl mx-auto',
+          wrapper: 'relative overflow-hidden',
+          features: 'gap-4'
+        }"
+        class="relative overflow-hidden"
+      >
+        <div class="absolute rounded-full -left-10 top-10 size-[300px] z-0 bg-primary/20 blur-[180px]" />
+        <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-0 bg-primary/20 blur-[180px]" />
 
-      :ui="{
-        container: 'max-w-4xl mx-auto !pt-0 !pb-s',
-        description: 'text-center',
-        wrapper: 'mt-0 py-0',
-        title: 'text-center'
-      }"
-    >
-      <template #title>
-        <h2 class="sm:*:leading-11">
-         und wie der Kurs <span class="text-primary">hilft</span>
-        </h2>
-      </template>
+        <template #title>
+          <div class="relative z-10">
+            <MDC
+              :value="'Und wie der Kurs <span class=&quot;text-primary&quot;>hilft</span>'"
+              class="*:leading-10 sm:*:leading-11"
+            />
+          </div>
+        </template>
 
-      <template #description>
-        <div class="max-w-2xl mx-auto space-y-6 text-gray-600 dark:text-gray-300">
-          <p class="text-lg md:text-xl leading-relaxed">
-            In der Motopädagogik werden genau solche Kinder in einem <span class="text-primary font-bold">geschützten Rahmen</span> begleitet, in dem sie in ihrem <span class="text-primary font-bold">eigenen Tempo</span> Erfahrungen sammeln dürfen.
-          </p>
-          <p class="text-lg md:text-xl leading-relaxed">Durch <span class="text-primary font-bold">spielerische</span> Bewegungslandschaften, <span class="text-primary font-bold">freies</span> Ausprobieren und <span class="text-primary font-bold">kooperative</span> Spiele verbessern Kinder nicht nur ihre Motorik, sondern gewinnen auch <span class="text-primary font-bold">Mut</span>, lernen mit Frust umzugehen und ihren Platz in einer Gruppe zu finden.</p>
-          <p class="text-lg md:text-xl leading-relaxed">
-              Eltern-Kind-Angebote im Alter von 1-3 Jahren nutzen den <span class="text-primary font-bold">natürlichen Bewegungsdrang</span> der Kleinsten und geben ihnen  <span class="text-primary font-bold">sichere Strukturen</span>, um Neues zu wagen.
-              Gleichzeitig erleben erleben Kinder neue Bewegungen, machen Fortschritte und bekommen Ideen, wie sie es auch zu Hause sinnvoll und <span class="text-primary font-bold">ohne Leistungsdruck</span> ausleben können.
-          </p>
-        </div>
-      </template>
-    </UPageSection>
+        <template #description>
+          <div class="relative z-10 space-y-4 text-base sm:text-lg leading-8 text-muted">
+            <p>
+              In der Motopädagogik werden Kinder in einem geschützten Rahmen begleitet,
+              in dem sie in ihrem eigenen Tempo Erfahrungen sammeln dürfen.
+            </p>
+            <p>
+              Durch spielerische Bewegungslandschaften, freies Ausprobieren und
+              kooperative Spiele entwickeln Kinder nicht nur ihre Motorik, sondern auch
+              Mut, Frustrationstoleranz und soziale Sicherheit.
+            </p>
+          </div>
+        </template>
+
+        <template #body>
+          <div class="relative z-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <ul class="space-y-4">
+              <li
+                v-for="item in benefits"
+                :key="item.title"
+                class="rounded-3xl border border-default bg-default/70 p-5 sm:p-6 shadow-sm transition hover:bg-default hover:shadow-md"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                    <UIcon :name="item.icon" class="size-5" />
+                  </div>
+                  <div class="min-w-0">
+                    <h3 class="text-base sm:text-lg font-semibold text-highlighted">
+                      {{ item.title }}
+                    </h3>
+                    <p class="mt-1 text-sm sm:text-base leading-7 text-muted">
+                      {{ item.text }}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="rounded-3xl overflow-hidden border border-default bg-elevated shadow-sm">
+              <img
+                src="/images/turnen.jpg"
+                alt="Kinder bewegen sich spielerisch in einer sicheren Kurssituation"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div class="p-5 sm:p-6">
+                <p class="text-sm sm:text-base leading-7 text-toned">
+                  Kinder erleben Bewegung als etwas Sicheres, Positives und Stärkendes –
+                  ohne Leistungsdruck, aber mit viel Raum zum Lernen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </UPageSection>
+    </template>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
@@ -187,7 +229,7 @@ const benefits = [
             <li
               v-for="item in courseFlow"
               :key="item.title"
-              class=" rounded-3xl border border-default bg-elevated/60 p-5 sm:p-6"
+              class="rounded-3xl border border-default bg-default/60 p-5 sm:p-6 shadow-sm transition hover:bg-default hover:shadow-md"
             >
               <div class="flex items-start gap-4">
                 <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
@@ -211,67 +253,6 @@ const benefits = [
               So entsteht ein sicherer, wertschätzender Raum, in dem Kinder lernen dürfen,
               ohne bewertet zu werden - und in dem es kein „richtig“ oder „falsch“ gibt,
               sondern vor allem wertvolle Erfahrungen.
-            </p>
-          </div>
-        </template>
-      </UPageSection>
-    </template>
-
-    <USeparator :ui="{ border: 'border-primary/30' }" />
-    <template>
-      <UPageSection
-        icon="i-lucide-sprout"
-        :ui="{
-          container: 'max-w-4xl mx-auto !pt-5 !pb-12',
-          wrapper: 'mt-0 py-0',
-          title: 'text-center',
-          description: 'text-center max-w-3xl mx-auto text-muted',
-          body: 'mt-10'
-        }"
-      >
-        <template #title>
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-highlighted">
-            Spielerisch lernen –
-            <span class="text-primary">was dein Kind gewinnt</span>
-          </h2>
-        </template>
-
-        <template #description>
-          <p>
-            In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen – ganz
-            spielerisch, ohne Druck und ohne Leistungsbewertung.
-          </p>
-        </template>
-
-        <template #body>
-          <ul class="space-y-4">
-            <li
-              v-for="item in benefits"
-              :key="item.title"
-              class="rounded-2xl border border-default bg-default/60 p-5 sm:p-6 shadow-sm transition hover:bg-default hover:shadow-md"
-            >
-              <div class="flex items-start gap-4">
-                <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                  <UIcon :name="item.icon" class="size-5" />
-                </div>
-
-                <div class="min-w-0">
-                  <h3 class="text-base sm:text-lg font-semibold text-highlighted">
-                    {{ item.title }}
-                  </h3>
-                  <p class="mt-1 text-sm sm:text-base leading-7 text-muted">
-                    {{ item.text }}
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <div class="mt-8 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6">
-            <p class="text-sm sm:text-base leading-7 text-toned">
-              Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung –
-              Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen
-              Weg finden.
             </p>
           </div>
         </template>

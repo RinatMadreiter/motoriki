@@ -22,9 +22,9 @@ section:
     - title: „Mein Kind ist tollpatschig, stolpert oft oder wirkt unsicher.“
       class: border-l border-primary pt-4 pb-4 pl-4
     - title: „Es ist sehr schüchtern und traut sich wenig zu.“
-      class: border-l border-default pt-4 pb-4 pl-4
+      class: border-l border-primary pt-4 pb-4 pl-4
     - title: „Es ist wild, immer in Bewegung und schnell überfordert.“
-      class: border-l border-default pt-4 pb-4 pl-4
+      class: border-l border-primary pt-4 pb-4 pl-4
 features:
   title: Take control of your [productivity]{.text-primary}
   description: Make every coding session count with smart analytics and workflow optimization.
