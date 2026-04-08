@@ -48,8 +48,8 @@ useSeoMeta({
       :features="page.section.features"
       orientation="horizontal"
       :ui="{
-        container: 'lg:pr-0 lg:pl-4  mx-0 max-w-none md:mr-10',
-        features: 'gap-0'
+        container: 'lg:pr-0 lg:pl-4  mx-0 max-w-none md:mr-10 !pb-8',
+        features: 'gap-4'
       }"
       
     >
@@ -72,29 +72,30 @@ useSeoMeta({
     </UPageSection>
 
     <UPageSection
-  
+       icon="i-lucide-arrow-down"
+
       :ui="{
-        container: 'max-w-3xl mx-auto !pt-0',
-        description: 'space-y-4',
+        container: 'max-w-4xl mx-auto !pt-0 !pb-s',
+        description: 'text-center',
         wrapper: 'mt-0 py-0',
         title: 'text-center'
       }"
     >
       <template #title>
-        <h2 class="text-5xl font-semibold leading-tight">
-          – und wie der Kurs <span class="text-primary font-semibold">hilft</span>
+        <h2 class="sm:*:leading-11">
+         und wie der Kurs <span class="text-primary">hilft</span>
         </h2>
       </template>
 
       <template #description>
-        <div class="space-y-4">
-          <p>
-            In unseren motopädagogischen Stunden erlebt dein Kind Bewegung als
-            etwas Positives, Spielerisches und Stärkendes.
+        <div class="max-w-2xl mx-auto space-y-6 text-gray-600 dark:text-gray-300">
+          <p class="text-lg md:text-xl leading-relaxed">
+            In der Motopädagogik werden genau solche Kinder in einem <span class="text-primary font-bold">geschützten Rahmen</span> begleitet, in dem sie in ihrem <span class="text-primary font-bold">eigenen Tempo</span> Erfahrungen sammeln dürfen.
           </p>
-          <p>
-            Du möchtest wissen, ob der Kurs zu deinem Kind passt?
-            Sprich mich gerne unverbindlich an.
+          <p class="text-lg md:text-xl leading-relaxed">Durch <span class="text-primary font-bold">spielerische</span> Bewegungslandschaften, <span class="text-primary font-bold">freies</span> Ausprobieren und <span class="text-primary font-bold">kooperative</span> Spiele verbessern Kinder nicht nur ihre Motorik, sondern gewinnen auch <span class="text-primary font-bold">Mut</span>, lernen mit Frust umzugehen und ihren Platz in einer Gruppe zu finden.</p>
+          <p class="text-lg md:text-xl leading-relaxed">
+              Eltern-Kind-Angebote im Alter von 1-3 Jahren nutzen den <span class="text-primary font-bold">natürlichen Bewegungsdrang</span> der Kleinsten und geben ihnen  <span class="text-primary font-bold">sichere Strukturen</span>, um Neues zu wagen.
+              Gleichzeitig erleben erleben Kinder neue Bewegungen, machen Fortschritte und bekommen Ideen, wie sie es auch zu Hause sinnvoll und <span class="text-primary font-bold">ohne Leistungsdruck</span> ausleben können.
           </p>
         </div>
       </template>

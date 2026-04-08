@@ -4,6 +4,11 @@ export default defineAppConfig({
       primary: 'brand',
       secondary: 'sand',
       neutral: 'warm'
+    },
+    pageFeature: {
+      slots: {
+        title: 'text-2xl',
+      }
     }
   }
 })
