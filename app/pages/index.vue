@@ -10,6 +10,62 @@ useSeoMeta({
   description: page.value.seo?.description || page.value.description,
   ogDescription: page.value.seo?.description || page.value.description
 })
+
+const courseFlow = [
+  {
+    icon: 'i-lucide-heart-handshake',
+    title: 'Ankommen & Begrüßung',
+    text: 'Ruhiger Start, jedes Kind wird persönlich willkommen geheißen - das schafft Vertrauen und Orientierung.'
+  },
+  {
+    icon: 'i-lucide-trees',
+    title: 'Bewegung & Spiel',
+    text: 'Bewegungslandschaften mit Matten, Geräten und Alltagsmaterialien laden zum Klettern, Krabbeln, Hüpfen, Balancieren, Rutschen und Bauen ein - ohne starre Übungsfolgen oder Leistungsdruck.'
+  },
+  {
+    icon: 'i-lucide-lightbulb',
+    title: 'Freies Experimentieren',
+    text: 'Die Kinder dürfen eigene Ideen einbringen, mit Materialien kreativ umgehen und spielerisch Lösungen finden - das stärkt Selbstständigkeit und Problemlösefähigkeit.'
+  },
+  {
+    icon: 'i-lucide-users',
+    title: 'Miteinander statt Gegeneinander',
+    text: 'Kooperative Spiele, gemeinsames Bauen und Ausprobieren fördern Rücksichtnahme, Helfen, Wartenkönnen und das Erleben von Gemeinschaft.'
+  },
+  {
+    icon: 'i-lucide-moon-star',
+    title: 'Ruhiger Abschluss',
+    text: 'Kleine Entspannungsübungen sowie kurze Reflexionen helfen den Kindern, das Erlebte zu verarbeiten und zur Ruhe zu kommen.'
+  }
+]
+
+const benefits = [
+  {
+    icon: 'i-lucide-activity',
+    title: 'Motorische Fähigkeiten',
+    text: 'Klettern, Springen, Kriechen, Balancieren und Bauen fördern Grob- und Feinmotorik, Gleichgewicht, Koordination und ein gutes Körpergefühl.'
+  },
+  {
+    icon: 'i-lucide-badge-check',
+    title: 'Selbstvertrauen & Mut',
+    text: 'Eigene Ideen umsetzen, Hindernisse bewältigen und Erfolgserlebnisse in der Gruppe stärken das Vertrauen in die eigenen Fähigkeiten.'
+  },
+  {
+    icon: 'i-lucide-users',
+    title: 'Soziale Kompetenzen',
+    text: 'In der Kleingruppe lernt dein Kind Rücksicht, Warten, Helfen, Regeln verstehen, Konflikte aushalten und Freundschaften knüpfen.'
+  },
+  {
+    icon: 'i-lucide-heart',
+    title: 'Emotionale Entwicklung',
+    text: 'Bewegung und Spiel helfen, Gefühle auszudrücken, Frust abzubauen und einen gesunden Umgang mit Emotionen zu entwickeln.'
+  },
+  {
+    icon: 'i-lucide-brain',
+    title: 'Konzentration & Ausdauer',
+    text: 'Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentration und Durchhaltevermögen – eine wichtige Basis für späteres Lernen.'
+  }
+]
 </script>
 
 <template>
@@ -100,6 +156,127 @@ useSeoMeta({
         </div>
       </template>
     </UPageSection>
+
+    <USeparator :ui="{ border: 'border-primary/30' }" />
+
+    <template>
+      <UPageSection
+        icon="i-lucide-baby"
+        :ui="{
+          container: 'max-w-4xl mx-auto !pt-5 !pb-12',
+          wrapper: 'mt-0 py-0',
+          title: 'text-center',
+          description: 'text-center max-w-2xl mx-auto text-muted'
+        }"
+      >
+        <template #title>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-highlighted">
+            Was euch im Kurs <span class="text-primary">erwartet</span>
+          </h2>
+        </template>
+
+        <template #description>
+          <p>
+            Jede Einheit folgt einem klaren, kindgerechten Ablauf, der Sicherheit gibt
+            und gleichzeitig viel Raum für freies Entdecken lässt.
+          </p>
+        </template>
+
+        <template #body>
+          <ul class="mt-10 space-y-4">
+            <li
+              v-for="item in courseFlow"
+              :key="item.title"
+              class=" rounded-3xl border border-default bg-elevated/60 p-5 sm:p-6"
+            >
+              <div class="flex items-start gap-4">
+                <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                  <UIcon :name="item.icon" class="size-5" />
+                </div>
+
+                <div class="min-w-0">
+                  <h3 class="text-base sm:text-lg font-semibold text-highlighted">
+                    {{ item.title }}
+                  </h3>
+                  <p class="mt-1 text-sm sm:text-base leading-7 text-muted">
+                    {{ item.text }}
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-8 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6">
+            <p class="text-sm sm:text-base leading-7 text-toned">
+              So entsteht ein sicherer, wertschätzender Raum, in dem Kinder lernen dürfen,
+              ohne bewertet zu werden - und in dem es kein „richtig“ oder „falsch“ gibt,
+              sondern vor allem wertvolle Erfahrungen.
+            </p>
+          </div>
+        </template>
+      </UPageSection>
+    </template>
+
+    <USeparator :ui="{ border: 'border-primary/30' }" />
+    <template>
+      <UPageSection
+        icon="i-lucide-sprout"
+        :ui="{
+          container: 'max-w-4xl mx-auto !pt-5 !pb-12',
+          wrapper: 'mt-0 py-0',
+          title: 'text-center',
+          description: 'text-center max-w-3xl mx-auto text-muted',
+          body: 'mt-10'
+        }"
+      >
+        <template #title>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-highlighted">
+            Spielerisch lernen –
+            <span class="text-primary">was dein Kind gewinnt</span>
+          </h2>
+        </template>
+
+        <template #description>
+          <p>
+            In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen – ganz
+            spielerisch, ohne Druck und ohne Leistungsbewertung.
+          </p>
+        </template>
+
+        <template #body>
+          <ul class="space-y-4">
+            <li
+              v-for="item in benefits"
+              :key="item.title"
+              class="rounded-2xl border border-default bg-default/60 p-5 sm:p-6 shadow-sm transition hover:bg-default hover:shadow-md"
+            >
+              <div class="flex items-start gap-4">
+                <div class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                  <UIcon :name="item.icon" class="size-5" />
+                </div>
+
+                <div class="min-w-0">
+                  <h3 class="text-base sm:text-lg font-semibold text-highlighted">
+                    {{ item.title }}
+                  </h3>
+                  <p class="mt-1 text-sm sm:text-base leading-7 text-muted">
+                    {{ item.text }}
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-8 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6">
+            <p class="text-sm sm:text-base leading-7 text-toned">
+              Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung –
+              Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen
+              Weg finden.
+            </p>
+          </div>
+        </template>
+      </UPageSection>
+    </template>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 

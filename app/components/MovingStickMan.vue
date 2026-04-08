@@ -98,6 +98,7 @@ svg#stickman.animate {
 
   @media (max-width: 500px) {
     right: -150px;
+      top: 8vh;
   }
 }
 
