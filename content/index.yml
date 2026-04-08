@@ -13,7 +13,7 @@ hero:
       target: _self
       size: xl
 section:
-  title: 'Typische [Sorgen]{.text-primary} von Eltern – und wie der Kurs [hilft]{.text-primary}'
+  title: 'Typische [Sorgen]{.text-primary} von Eltern'
   description: 'Viele Eltern kennen diese Gedanken:'
   images:
     mobile: '/images/gesicht.jpg'

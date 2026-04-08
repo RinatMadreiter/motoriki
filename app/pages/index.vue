@@ -48,7 +48,7 @@ useSeoMeta({
       :features="page.section.features"
       orientation="horizontal"
       :ui="{
-        container: 'lg:pr-0 lr:pl-4  mx-0 max-w-none md:mr-10',
+        container: 'lg:pr-0 lg:pl-4  mx-0 max-w-none md:mr-10',
         features: 'gap-0'
       }"
       
@@ -62,7 +62,7 @@ useSeoMeta({
       <img
         :src="page.section.images.desktop"
         :alt="page.section.title"
-        class="hidden lg:block w-full max-w-4xl rounded-l-3xl ring-4 ring-primary -mr-[100px]"
+        class="hidden lg:block w-full max-w-4xl rounded-l-3xl ring-4 ring-primary -mr-[100px] 2xl:rounded-3xl"
 >
       <img
         :src="page.section.images.mobile"
@@ -71,7 +71,34 @@ useSeoMeta({
       >
     </UPageSection>
 
-    <UPageSection title="- und wie der Kurs hilft" :ui="{ title: 'text-primary' }"></UPageSection>
+    <UPageSection
+  
+      :ui="{
+        container: 'max-w-3xl mx-auto !pt-0',
+        description: 'space-y-4',
+        wrapper: 'mt-0 py-0',
+        title: 'text-center'
+      }"
+    >
+      <template #title>
+        <h2 class="text-5xl font-semibold leading-tight">
+          – und wie der Kurs <span class="text-primary font-semibold">hilft</span>
+        </h2>
+      </template>
+
+      <template #description>
+        <div class="space-y-4">
+          <p>
+            In unseren motopädagogischen Stunden erlebt dein Kind Bewegung als
+            etwas Positives, Spielerisches und Stärkendes.
+          </p>
+          <p>
+            Du möchtest wissen, ob der Kurs zu deinem Kind passt?
+            Sprich mich gerne unverbindlich an.
+          </p>
+        </div>
+      </template>
+    </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
