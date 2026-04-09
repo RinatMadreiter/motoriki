@@ -56,6 +56,39 @@ const benefits = [
     text: 'Eltern-Kind-Angebote greifen den natürlichen Bewegungsdrang auf und geben gleichzeitig Sicherheit, um Neues zu wagen.'
   }
 ]
+
+const childBenefits = [
+  {
+    title: 'Motorische Fähigkeiten',
+    description:
+      'Klettern, Springen, Kriechen, Balancieren und Bauen schulen Grob- und Feinmotorik, Gleichgewichtssinn, Koordination und Körpergefühl.',
+    icon: 'i-lucide-activity'
+  },
+  {
+    title: 'Selbstvertrauen & Mut',
+    description:
+      'Eigene Ideen umsetzen, Hindernisse bewältigen und Erfolgserlebnisse in der Gruppe stärken Selbstbewusstsein und Vertrauen in die eigenen Fähigkeiten.',
+    icon: 'i-lucide-badge-check'
+  },
+  {
+    title: 'Soziale Kompetenzen',
+    description:
+      'In der Kleingruppe lernt dein Kind Rücksicht, Warten, Helfen, Regeln verstehen, Konflikte aushalten und Freundschaften knüpfen.',
+    icon: 'i-lucide-users'
+  },
+  {
+    title: 'Emotionale Entwicklung',
+    description:
+      'Bewegung und Spiel helfen, Gefühle auszudrücken, Frust abzubauen und einen gesunden Umgang mit Emotionen zu finden.',
+    icon: 'i-lucide-heart'
+  },
+  {
+    title: 'Konzentration & Ausdauer',
+    description:
+      'Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentrationsfähigkeit und Durchhaltevermögen – eine wichtige Basis für späteres Lernen.',
+    icon: 'i-lucide-brain'
+  }
+]
 </script>
 
 <template>
@@ -269,7 +302,7 @@ const benefits = [
         title: 'text-left @container relative flex',
         description: 'text-left'
       }"
-      class="relative overflow-hidden"
+      class="relative overflow-hidden "
     >
       <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
@@ -286,6 +319,12 @@ const benefits = [
           />
         </div>
       </template>
+      <div class="mt-0 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6 max-w-5xl mx-auto">
+        <p class="text-sm sm:text-base leading-7 text-toned">
+          Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung –
+          Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen Weg finden.
+        </p>
+      </div>
     </UPageSection>
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
@@ -333,6 +372,7 @@ const benefits = [
       </template>
     </UPageSection>
 
+    <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
       id="testimonials"

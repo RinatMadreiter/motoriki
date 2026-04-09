@@ -3,12 +3,10 @@
 
 @source "../../../content/**/*";
 
-@theme {
-  --font-sans: 'Baloo 2', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
-}
-
 
 @theme static {
+  --font-sans: 'Baloo 2', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+
   /* primary = brand (green) */
   --color-brand-50:  #E3EBD7;
   --color-brand-100: #D7E1C5;
