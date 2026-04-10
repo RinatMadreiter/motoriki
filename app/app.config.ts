@@ -7,7 +7,7 @@ export default defineAppConfig({
     },
     pageFeature: {
       slots: {
-        title: 'text-2xl',
+        title: 'text-2xl'
       }
     }
   }
