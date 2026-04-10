@@ -210,7 +210,7 @@ const courseDetails = [
 
           <div class="rounded-3xl overflow-hidden border border-default bg-elevated shadow-sm">
             <img
-              src="/images/turnen.jpg"
+              src="/images/turnen.webp"
               alt="Kinder bewegen sich spielerisch in einer sicheren Kurssituation"
               class="h-full w-full object-cover"
               loading="lazy"
@@ -361,7 +361,7 @@ const courseDetails = [
             class="overflow-hidden rounded-3xl border border-default/70 bg-default/75 shadow-sm"
           >
             <img
-              src="/images/turnen2.jpg"
+              src="/images/turnen2.webp"
               alt="Kinder in sicheren Bewegungslandschaften - genau so fühlt sich der Kurs an"
               class="h-72 sm:h-80 lg:h-96 w-full object-cover rounded-3xl"
               loading="lazy"

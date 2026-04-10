@@ -16,8 +16,8 @@ section:
   title: 'Typische [Sorgen]{.text-primary} von Eltern'
   description: 'Viele Eltern kennen diese Gedanken:'
   images:
-    mobile: '/images/gesicht.jpg'
-    desktop: '/images/gesicht.jpg'
+    mobile: '/images/gesicht.webp'
+    desktop: '/images/gesicht.webp'
   features:
     - title: „Mein Kind ist tollpatschig, stolpert oft oder wirkt unsicher.“
       class: border-l border-primary pt-4 pb-4 pl-4
