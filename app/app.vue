@@ -24,7 +24,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp :toaster="{ expand: false }">
+  <UApp>
     <AppHeader />
 
     <UMain>

@@ -95,7 +95,7 @@ const courseDetails = [
       <UColorModeImage
         light="/images/light/line-1.svg"
         dark="/images/dark/line-1.svg"
-        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[650px]"
+        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[850px]"
       />
     </div>
 
@@ -311,7 +311,7 @@ const courseDetails = [
           <UColorModeImage
             light="/images/light/line-2.svg"
             dark="/images/dark/line-2.svg"
-            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
+            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[85%]"
           />
         </div>
       </template>
@@ -348,7 +348,7 @@ const courseDetails = [
           <UColorModeImage
             light="/images/light/line-2.svg"
             dark="/images/dark/line-2.svg"
-            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
+            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[92%]"
           />
         </div>
       </template>

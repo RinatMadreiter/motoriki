@@ -58,8 +58,9 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
       <UButton
         class="mt-4"
-        label="Download App"
+        label="Jetzt Platz sichern"
         variant="subtle"
+        to="#contact"
         block
       />
     </template>

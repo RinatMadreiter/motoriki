@@ -26,7 +26,7 @@ section:
     - title: „Es ist wild, immer in Bewegung und schnell überfordert.“
       class: border-l border-primary pt-4 pb-4 pl-4
 features:
-  title: "Spielerisch lernen - <span class=\"text-primary\">was dein Kind gewinnt</span>"
+  title: "Spielerisch lernen - [was dein Kind gewinnt]{.text-primary}"
   description: "In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen - spielerisch, alltagsnah und ohne Leistungsdruck."
   features:
     - title: "Motorische Fähigkeiten"
@@ -109,7 +109,7 @@ testimonials:
           src: '/images/recommendation/recommendation1.webp'
 cta:
   title: Bereit für [„Bewegen. Lachen. Wachsen.“]{.text-primary}  mit deinem Kind?
-  description: Wenn du das Gefühl hast, „Genau so einen Raum wünsche ich mir für mein Kind“, dann melde dich jetzt bei mir und sichere euch einen der wenigen Plätze.\nKlicke auf den Button unten, schreib mir kurz den Namen und das Alter deines Kindes und ob du einen Schnuppertermin oder direkt den ganzen Kurs buchen möchtest.
+  description: Wenn du das Gefühl hast, „Genau so einen Raum wünsche ich mir für mein Kind“, dann melde dich jetzt bei mir und sichere euch einen der wenigen Plätze. Klicke auf den [Button]{.text-primary} unten, schreib mir kurz den Namen und das Alter deines Kindes und ob du einen Schnuppertermin oder direkt den ganzen Kurs buchen möchtest.
   links:
     - label: Jetzt Platz sichern
       to: ''
