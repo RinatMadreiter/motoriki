@@ -323,6 +323,7 @@ const courseDetails = [
       </div>
     </UPageSection>
 
+
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
     <UPageSection
@@ -493,7 +494,7 @@ const courseDetails = [
           <UColorModeImage
             light="/images/light/line-6.svg"
             dark="/images/dark/line-6.svg"
-            class="absolute left-10 -top-10 sm:top-0 h-full"
+            class="absolute left-0 -top-10 sm:top-0 h-full"
           />
           <UColorModeImage
             light="/images/light/line-7.svg"
