@@ -53,40 +53,35 @@ const benefits = [
   {
     icon: 'i-lucide-baby',
     title: 'Sinnvolle Struktur für 1-3 Jahre',
-    text: 'Eltern-Kind-Angebote greifen den natürlichen Bewegungsdrang auf und geben gleichzeitig Sicherheit, um Neues zu wagen.'
+    text: 'Kind-Angebote greifen den natürlichen Bewegungsdrang auf und geben gleichzeitig Sicherheit, um Neues zu wagen.'
   }
 ]
 
-const childBenefits = [
+const courseDetails = [
   {
-    title: 'Motorische Fähigkeiten',
-    description:
-      'Klettern, Springen, Kriechen, Balancieren und Bauen schulen Grob- und Feinmotorik, Gleichgewichtssinn, Koordination und Körpergefühl.',
-    icon: 'i-lucide-activity'
+    label: 'Ort',
+    value: 'Motopädagogische Kind-Bewegungsgruppen in Feldkirchen (genaue Adresse nach Anmeldung).',
+    icon: 'i-lucide-map-pin'
   },
   {
-    title: 'Selbstvertrauen & Mut',
-    description:
-      'Eigene Ideen umsetzen, Hindernisse bewältigen und Erfolgserlebnisse in der Gruppe stärken Selbstbewusstsein und Vertrauen in die eigenen Fähigkeiten.',
-    icon: 'i-lucide-badge-check'
+    label: 'Alter',
+    value: 'Kinder von 1–3 Jahren.',
+    icon: 'i-lucide-baby'
   },
   {
-    title: 'Soziale Kompetenzen',
-    description:
-      'In der Kleingruppe lernt dein Kind Rücksicht, Warten, Helfen, Regeln verstehen, Konflikte aushalten und Freundschaften knüpfen.',
+    label: 'Gruppengröße',
+    value: 'Pro Kurs maximal 8 Kinder – so bleibt genug Zeit und Raum für jedes einzelne Kind.',
     icon: 'i-lucide-users'
   },
   {
-    title: 'Emotionale Entwicklung',
-    description:
-      'Bewegung und Spiel helfen, Gefühle auszudrücken, Frust abzubauen und einen gesunden Umgang mit Emotionen zu finden.',
-    icon: 'i-lucide-heart'
+    label: 'Kursumfang',
+    value: '15 Termine / Einheiten pro Semester.',
+    icon: 'i-lucide-calendar-days'
   },
   {
-    title: 'Konzentration & Ausdauer',
-    description:
-      'Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentrationsfähigkeit und Durchhaltevermögen – eine wichtige Basis für späteres Lernen.',
-    icon: 'i-lucide-brain'
+    label: 'Kursbeitrag',
+    value: '160 € pro Semester zum Kursauftakt.',
+    icon: 'i-lucide-receipt-text'
   }
 ]
 </script>
@@ -205,7 +200,7 @@ const childBenefits = [
                     <h3 class="text-base sm:text-lg font-semibold text-highlighted">
                       {{ item.title }}
                     </h3>
-                    <p class="mt-1 text-sm sm:text-base leading-7 text-muted">
+                    <p class="mt-1 sm:text-base leading-7 text-muted">
                       {{ item.text }}
                     </p>
                   </div>
@@ -221,7 +216,7 @@ const childBenefits = [
                 loading="lazy"
               />
               <div class="p-5 sm:p-6">
-                <p class="text-sm sm:text-base leading-7 text-toned">
+                <p class="sm:text-base leading-7 text-toned">
                   Kinder erleben Bewegung als etwas Sicheres, Positives und Stärkendes –
                   ohne Leistungsdruck, aber mit viel Raum zum Lernen.
                 </p>
@@ -273,7 +268,7 @@ const childBenefits = [
                   <h3 class="text-base sm:text-lg font-semibold text-highlighted">
                     {{ item.title }}
                   </h3>
-                  <p class="mt-1 text-sm sm:text-base leading-7 text-muted">
+                  <p class="mt-1 sm:text-base leading-7 text-muted">
                     {{ item.text }}
                   </p>
                 </div>
@@ -282,7 +277,7 @@ const childBenefits = [
           </ul>
 
           <div class="mt-8 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6">
-            <p class="text-sm sm:text-base leading-7 text-toned">
+            <p class="sm:text-base leading-7 text-toned">
               So entsteht ein sicherer, wertschätzender Raum, in dem Kinder lernen dürfen,
               ohne bewertet zu werden - und in dem es kein „richtig“ oder „falsch“ gibt,
               sondern vor allem wertvolle Erfahrungen.
@@ -300,7 +295,8 @@ const childBenefits = [
       :features="page.features.features"
       :ui="{
         title: 'text-left @container relative flex',
-        description: 'text-left'
+        description: 'text-left !text-xl',
+        features: '[&_[data-slot=description]]:!text-lg md:[&_[data-slot=description]]:!text-lg'
       }"
       class="relative overflow-hidden "
     >
@@ -320,8 +316,8 @@ const childBenefits = [
         </div>
       </template>
       <div class="mt-0 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6 max-w-5xl mx-auto">
-        <p class="text-sm sm:text-base leading-7 text-toned">
-          Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung –
+        <p class="text-lg sm:text-base leading-7 text-toned leading-relaxed">
+          Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung -
           Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen Weg finden.
         </p>
       </div>
@@ -329,48 +325,107 @@ const childBenefits = [
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
-    <UPageSection
-      id="steps"
-      :description="page.steps.description"
-      class="relative overflow-hidden"
-    >
-      <template #headline>
-        <UColorModeImage
-          light="/images/light/line-3.svg"
-          dark="/images/dark/line-3.svg"
-          class="absolute -top-10 sm:top-0 right-1/2 h-24"
-        />
-      </template>
-      <template #title>
-        <MDC :value="page.steps.title" />
-      </template>
+    <template>
+      <UPageSection
+        id="course-details"
+        :ui="{
+          container: 'max-w-5xl mx-auto',
+          wrapper: 'relative overflow-hidden',
+          title: 'text-left @container relative flex',
+          description: 'text-left max-w-2xl text-base sm:text-lg leading-8 text-muted',
+          body: 'mt-12'
+        }"
+        class="relative overflow-hidden"
+      >
+        <div class="pointer-events-none absolute -left-10 top-10 size-[280px] rounded-full bg-primary/20 blur-[180px]" />
+        <div class="pointer-events-none absolute -right-10 -bottom-10 size-[280px] rounded-full bg-primary/20 blur-[180px]" />
 
-      <template #features>
-        <UPageCard
-          v-for="(step, index) in page.steps.items"
-          :key="index"
-          class="group"
-          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }"
-        >
-          <UColorModeImage
-            v-if="step.image"
-            :light="step.image?.light"
-            :dark="step.image?.dark"
-            :alt="step.title"
-            class="size-full"
+        <template #title>
+          <MDC
+            :value="'Kursdetails – <span class=&quot;text-primary&quot;>Motopädagogik in Feldkirchen</span>'"
+            class="*:leading-9 sm:*:leading-10"
           />
-
-          <div class="flex flex-col gap-2">
-            <span class="text-lg font-semibold">
-              {{ step.title }}
-            </span>
-            <span class="text-sm text-muted">
-              {{ step.description }}
-            </span>
+          <div class="hidden @min-[1020px]:block">
+            <UColorModeImage
+              light="/images/light/line-2.svg"
+              dark="/images/dark/line-2.svg"
+              class="absolute top-0 right-0 size-full transform scale-95 translate-x-[70%]"
+            />
           </div>
-        </UPageCard>
-      </template>
-    </UPageSection>
+        </template>
+
+        <template #body>
+          <div class="space-y-8">
+            <!-- Image: Full-width hero at top -->
+            <UCard
+              variant="soft"
+              class="overflow-hidden rounded-3xl border border-default/70 bg-default/75 shadow-sm"
+            >
+              <img
+                src="/images/turnen2.jpg"
+                alt="Kinder in sicheren Bewegungslandschaften - genau so fühlt sich der Kurs an"
+                class="h-72 sm:h-80 lg:h-96 w-full object-cover rounded-3xl"
+                loading="lazy"
+              />
+              <div class="p-6 sm:p-8">
+                <p class="sm:text-base leading-7 text-muted">
+                  Spielerische Bewegung stärkt Selbstvertrauen, Koordination und Freude am Entdecken.
+                </p>
+              </div>
+            </UCard>
+
+            <!-- Details grid below image -->
+            <div class="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+              <!-- Ort: Smaller, left-aligned -->
+              <UCard
+                variant="soft"
+                class="lg:col-span-1 rounded-3xl border border-default/70 bg-default/75 shadow-sm"
+              >
+                <div class="space-y-4">
+                  <div class="flex items-center gap-3">
+                    <div class="flex size-11 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                      <UIcon name="i-lucide-map-pin" class="size-5" />
+                    </div>
+                    <div>
+                      <p class="text-xs uppercase tracking-[0.18em] text-muted">Ort</p>
+                      <h3 class="text-lg font-semibold text-highlighted">Feldkirchen</h3>
+                    </div>
+                  </div>
+                  <p class="sm:text-base leading-7 text-muted">
+                    Motopädagogische Kind-Bewegungsgruppen in Feldkirchen
+                    (genaue Adresse nach Anmeldung).
+                  </p>
+                </div>
+              </UCard>
+
+              <UCard
+                v-for="(item, index) in courseDetails.slice(1)"
+                :key="item.label"
+                :variant="index === 1 ? 'outline' : 'soft'"
+                class="rounded-3xl border border-default/70 bg-default/75 shadow-sm transition hover:shadow-md"
+                :class="index === 1 ? 'lg:-translate-y-2' : ''"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                    <UIcon :name="item.icon" class="size-5" />
+                  </div>
+
+                  <div class="min-w-0">
+                    <p class="text-xs uppercase tracking-[0.18em] text-muted">
+                      {{ item.label }}
+                    </p>
+                    <p class="mt-2 sm:text-base leading-7 text-toned">
+                      {{ item.value }}
+                    </p>
+                  </div>
+                </div>
+              </UCard>
+            </div>
+          </div>
+        </template>
+      </UPageSection>
+    </template>
+
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
@@ -378,7 +433,7 @@ const childBenefits = [
       id="testimonials"
       :title="page.testimonials.title"
       :description="page.testimonials.description"
-      :items="page.testimonials.items"
+      :items="page.testimonials.items" 
     >
       <template #headline>
         <UColorModeImage
@@ -398,12 +453,12 @@ const childBenefits = [
             :key="index"
             variant="subtle"
             :description="testimonial.quote"
-            :ui="{ description: 'before:content-[open-quote] after:content-[close-quote]' }"
+            :ui="{ description: 'text-xl before:content-[open-quote] after:content-[close-quote]' }"
           >
             <template #footer>
               <UUser
                 v-bind="testimonial.user"
-                size="xl"
+                size="3xl"
               />
             </template>
           </UPageCard>

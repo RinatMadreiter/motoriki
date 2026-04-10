@@ -26,8 +26,8 @@ section:
     - title: „Es ist wild, immer in Bewegung und schnell überfordert.“
       class: border-l border-primary pt-4 pb-4 pl-4
 features:
-  title: "Spielerisch lernen – <span class=\"text-primary\">was dein Kind gewinnt</span>"
-  description: "In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen – spielerisch, alltagsnah und ohne Leistungsdruck."
+  title: "Spielerisch lernen - <span class=\"text-primary\">was dein Kind gewinnt</span>"
+  description: "In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen - spielerisch, alltagsnah und ohne Leistungsdruck."
   features:
     - title: "Motorische Fähigkeiten"
       description: "Klettern, Springen, Kriechen, Balancieren und Bauen schulen Grob- und Feinmotorik, Gleichgewichtssinn, Koordination und Körpergefühl."
@@ -42,7 +42,7 @@ features:
       description: "Bewegung und Spiel helfen, Gefühle auszudrücken, Frust abzubauen und einen gesunden Umgang mit Emotionen zu finden."
       icon: "i-lucide-heart"
     - title: "Konzentration & Ausdauer"
-      description: "Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentrationsfähigkeit und Durchhaltevermögen – eine wichtige Basis für späteres Lernen."
+      description: "Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentrationsfähigkeit und Durchhaltevermögen - eine wichtige Basis für späteres Lernen."
       icon: "i-lucide-brain"
 steps:
   title: Start coding smarter in [3 steps]{.text-primary}
@@ -64,30 +64,49 @@ steps:
         light: '/images/light/track.svg'
         dark: '/images/dark/track.svg'
 testimonials:
-  title: Join thousands of productive [developers]{.text-primary}
-  description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
+  title: Das sagen [Eltern]{.text-primary} über [MotoRiki]{.text-primary} 
   items:
-    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
+    - quote: Mein Sohn Noah ( 17 Monate) besucht den motopädagogischen Bewegungskurs von Riki. Riki ist eine sehr umsichtige und auch kreative Persönlichkeit. Wir fühlen uns sehr wohl und gut in ihrem Kurs aufgehoben. Auch mein Sohn Noah konnte motorisch bereits große Fortschritte machen. Mit viel Spaß an der Bewegung hat er sogar das Laufen gelernt. Ich kann diesen Kurs nur wärmsten für jede Mama mit ihrem Kleinkind weiterempfehlen!
       user:
-        name: 'Sarah Moriceau'
-        description: 'Brand Designer'
+        name: 'Nadine'
+        description:  'Mutter'
+        target: _blank    
+    - quote: Ich kenne Riki als powergeladene 4-fach Mama schon seit Geburt ihrer ersten Tochter (und davor). Sie liebt die Arbeit mit Kindern - und das merken die Kinder! Sie weiß, jedes Kind ist anders und ist bemüht auf jeden individuell einzugehen. Sie hat mir da bereits mehrfach gute Ratschläge für meine Kinder gegeben. Kinder sind für sie wertvoll und man merkt das wirklich HERZ in ihrer Arbeit steckt.
+      user:
+        name: 'Sara'
+        description:  'Mutter'
+        target: _blank
+    - quote: Riki schafft es immer die Aufmerksamkeit der Kinder auf kreative Weise zu gewinnen und sie für Bewegung zu begeistern. Kinder hören Riki sehr gerne zu. Wenn es zu laut wird bringt sie mit Hilfe von Motopädagogik Ruhe in das Geschehen und die Kinder machen gerne mit. Unsere Kinder sind gerne bei ihr!
+      user:  
+        name: 'Rinat'
+        description:  'Vater von 3 Kindern'
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
-    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
+          src: '/images/recommendation/recommendation3.webp'
+    - quote: Wenn ich über Riki spreche, sage ich immer Sie ist eine geborene Pädagogin. Mit ihrer liebevollen und freundlichen Art kann man als Kind - und als Mama - nur begeistert sein. Sie hat eine besondere Begabung, sich auf Kinderebene hineinzuversetzen und genau zu erkennen, welche nächsten Schritte das Kind herausfordern, ohne es zu überfordern.
       user:
-        name: 'Sébastien Chopin'
-        description:  'Lead Software Engineer'
+        name: 'Michaela'
+        description:  'Mutter von 3 Kindern'
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
-    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
+          src: '/images/recommendation/recommendation2.webp'
+    - quote: Liebe Eltern, so positiv und fröhlich wie Riki auf ihrem Flyer ausschaut, so ist sie auch im Alltag und erst recht in ihren Moto-Pädagogik Einheiten! Ich bin immer wieder beeindruckt, mit welcher Wertschätzung sie jedem einzelnen Kind begegnet. Selbstverständlich ist sie ausgesprochen kompetent, dennoch achtet sie auf die spielerische Leichtigkeit und den Spaßfaktor. Sie fördert in ihren Einheiten Bewegungsabläufe und Wahrnehmung, soziale Kompetenz, unbekümmerte Interaktion und Vieles mehr. Während sie den Kindern zuschaut, nimmt sie die Kleinen ganzheitlich wahr und sieht, welche Themen sich im unbeschwerten Spiel zeigen. Diese baut sie in den nächsten Einheiten ein und erarbeitet damit eine individuelle, für diese Gruppe passende Moto-Pädagogik! Die Kinder wissen, bei der Riki macht's riesig Spaß!!! Die Eltern dürfen wissen, hier wird sich mein Kind in liebevoller, kompetenter Begleitung weiter entwickeln. Ich wünsche allen - Eltern, Kindern und Riki - wundervolle Moto-Pädagogik Einheiten.
       user:
-        name: 'Benjamin Canac'
-        description:  'Senior Frontend Developer'
+        name: 'Silvia'
+        description:  'Mutter'
+        target: _blank      
+    - quote: Meine Tochter liebt das Turnen bei Riki! Sie spielt zu Hause nach, was im Kurs gemacht wurde und wird dabei selbst zur kleinen Turnlehrerin. Sie hat große Freude an den Spielen und der Bewegung - klare Empfehlung unsererseits!🤗
+      user:
+        name: 'Alina'
+        description:  'Mutter'
+        target: _blank     
+    - quote: Ich kann Riki von Herzen empfehlen. Sie hat ein unglaubliches Gespür für Kinder und bringt durch ihre Erfahrung als Kindergärtnerin und Mama von vier Kindern so viel Ruhe, Verständnis und Kompetenz mit. Kinder fühlen sich einfach wohl bei ihr. Ich kann sie in der Förderbegleitung nur wärmstens empfehlen.
+      user:
+        name: 'Manuela'
+        description: ''
         target: _blank
         avatar:
-          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
+          src: '/images/recommendation/recommendation1.webp'
 cta:
   title: Ready to build an amazing landing page?
   description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
