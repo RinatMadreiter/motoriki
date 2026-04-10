@@ -3,40 +3,22 @@
 </script>
 
 <template>
-  <USeparator
-    icon="i-simple-icons-nuxtdotjs"
-    class="h-px"
-  />
+  <USeparator />
 
   <UFooter :ui="{ top: 'border-b border-default' }">
-    <template #left>
-      <p class="text-sm text-muted">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+    <template #right>
+      <p class="text-xs text-muted">
+        Erstellt von 
+        <NuxtLink to="https://rinatmadreiter.github.io/" target="_blank">Rinat</NuxtLink>
       </p>
     </template>
 
-    <template #right>
+    <template #left>
       <UButton
-        to="https://go.nuxt.com/discord"
+        to="https://www.instagram.com/motoriki.fe/"
         target="_blank"
-        icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://go.nuxt.com/x"
-        target="_blank"
-        icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
-        color="neutral"
-        variant="ghost"
-      />
-      <UButton
-        to="https://github.com/nuxt-ui-templates/landing"
-        target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        icon="i-simple-icons-instagram"
+        aria-label="Motoriki auf Instagram"
         color="neutral"
         variant="ghost"
       />
