@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     enabled: true
   },
   app: {
-    baseURL: import.meta.env.NUXT_APP_BASE_URL || '/',
+    baseURL:  '/',
     buildAssetsDir: '/_nuxt/'
   },
   css: ['~/assets/css/main.css'],
