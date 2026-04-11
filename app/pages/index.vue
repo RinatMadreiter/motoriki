@@ -162,7 +162,7 @@ useSeoMeta({
       </template>
 
       <template #body>
-        
+
         <ul class="mt-10 space-y-4">
           <IconCard
             v-for="item in page?.courseFlow?.items"
@@ -299,30 +299,12 @@ useSeoMeta({
             </UCard>
 
             <!-- Rest of items: Grid cards -->
-            <UCard
+            <DetailCard
               v-for="(item, index) in page?.courseDetails?.items?.slice(1)"
               :key="item.label"
-              variant="soft"
-              class="rounded-3xl border border-default/70 bg-default/75 shadow-sm transition hover:shadow-md"
-            >
-              <div class="flex items-start gap-4">
-                <div class="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/15">
-                  <UIcon
-                    :name="item.icon"
-                    class="size-5"
-                  />
-                </div>
+              v-bind="item"
+            />
 
-                <div class="min-w-0">
-                  <p class="text-xs uppercase tracking-[0.18em] text-muted font-bold">
-                    {{ item.label }}
-                  </p>
-                  <p class="mt-2 sm:text-base leading-7 text-toned text-lg">
-                    {{ item.value }}
-                  </p>
-                </div>
-              </div>
-            </UCard>
           </div>
         </div>
       </template>
