@@ -9,10 +9,10 @@
       </div>
 
       <div class="min-w-0">
-        <p class="text-xs uppercase tracking-[0.18em] text-muted font-bold">
+        <p class="text-xs uppercase tracking-[0.18em] text-muted font-bold break-words">
           {{ label }}
         </p>
-        <p class="mt-2 sm:text-base leading-7 text-toned text-lg">
+        <p class="mt-2 sm:text-base leading-7 text-toned text-lg break-words">
           {{ value }}
         </p>
       </div>
@@ -29,3 +29,4 @@ defineProps<{
 
 defineEmits<{}>()
 </script>
+

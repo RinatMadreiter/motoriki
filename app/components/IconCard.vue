@@ -5,8 +5,8 @@
         <UIcon :name="icon" class="size-5" :aria-label="title" />
       </div>
       <div class="min-w-0">
-        <h3 class="text-base sm:text-lg font-semibold text-highlighted">{{ title }}</h3>
-        <p class="mt-1 sm:text-base leading-7 text-muted">{{ text }}</p>
+        <h3 class="text-base sm:text-lg font-semibold text-highlighted break-words">{{ title }}</h3>
+        <p class="mt-1 sm:text-base leading-7 text-muted break-words">{{ text }}</p>
       </div>
     </div>
   </li>
