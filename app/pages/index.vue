@@ -36,10 +36,14 @@ useSeoMeta({
       }"
     >
       <template #title>
-        <MDC
-          :value="page.title"
-          unwrap="p"
-        />
+        <div class="flex flex-col items-center gap-2 text-center">
+          <span class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight" :value="page.title">
+            MotoRiki
+          </span>
+          <span class="text-5xl sm:text-5xl lg:text-5xl font-black tracking-tight">
+            Bewegen. Lachen. Wachsen.
+          </span>
+        </div>
       </template>
     </UPageHero>
 
