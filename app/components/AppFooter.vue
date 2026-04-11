@@ -8,8 +8,11 @@
   <UFooter :ui="{ top: 'border-b border-default' }">
     <template #right>
       <p class="text-xs text-muted">
-        Erstellt von 
-        <NuxtLink to="https://rinatmadreiter.github.io/" target="_blank">Rinat</NuxtLink>
+        Erstellt von
+        <NuxtLink
+          to="https://rinatmadreiter.github.io/"
+          target="_blank"
+        >Rinat</NuxtLink>
       </p>
     </template>
 

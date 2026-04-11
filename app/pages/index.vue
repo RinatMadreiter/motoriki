@@ -10,7 +10,6 @@ useSeoMeta({
   description: page.value.seo?.description || page.value.description,
   ogDescription: page.value.seo?.description || page.value.description
 })
-
 </script>
 
 <template>
@@ -37,7 +36,10 @@ useSeoMeta({
     >
       <template #title>
         <div class="flex flex-col items-center gap-2 text-center">
-          <span class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight" :value="page.title">
+          <span
+            class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight"
+            :value="page.title"
+          >
             MotoRiki
           </span>
           <span class="text-5xl sm:text-5xl lg:text-5xl font-black tracking-tight">
@@ -100,7 +102,10 @@ useSeoMeta({
 
       <template #description>
         <div class="space-y-4 text-base sm:text-lg leading-8 text-muted">
-          <p v-for="(paragraph, index) in page?.intro?.paragraphs" :key="index">
+          <p
+            v-for="(paragraph, index) in page?.intro?.paragraphs"
+            :key="index"
+          >
             {{ paragraph }}
           </p>
         </div>
@@ -108,7 +113,6 @@ useSeoMeta({
 
       <template #body>
         <div class="relative z-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-  
           <ul class="space-y-4">
             <IconCard
               v-for="item in page?.benefitsOverview?.items"
@@ -158,7 +162,6 @@ useSeoMeta({
       </template>
 
       <template #body>
-
         <ul class="mt-10 space-y-4">
           <IconCard
             v-for="item in page?.courseFlow?.items"
@@ -209,7 +212,6 @@ useSeoMeta({
         </p>
       </div>
     </UPageSection>
-
 
     <USeparator :ui="{ border: 'border-primary/30' }" />
 
@@ -293,11 +295,10 @@ useSeoMeta({
 
             <!-- Rest of items: Grid cards -->
             <DetailCard
-              v-for="(item, index) in page?.courseDetails?.items?.slice(1)"
+              v-for="(item) in page?.courseDetails?.items?.slice(1)"
               :key="item.label"
               v-bind="item"
             />
-
           </div>
         </div>
       </template>

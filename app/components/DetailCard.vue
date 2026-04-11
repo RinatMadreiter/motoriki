@@ -5,7 +5,11 @@
   >
     <div class="flex items-start gap-4">
       <div class="flex size-10 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/15">
-        <UIcon :name="icon" class="size-5" :aria-label="label" />
+        <UIcon
+          :name="icon"
+          class="size-5"
+          :aria-label="label"
+        />
       </div>
 
       <div class="min-w-0">
@@ -26,7 +30,4 @@ defineProps<{
   value: string
   icon: string
 }>()
-
-defineEmits<{}>()
 </script>
-

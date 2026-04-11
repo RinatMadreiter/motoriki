@@ -128,10 +128,10 @@ export const collections = {
         links: z.array(createLinkSchema())
       }),
       courseFlow: z.object({
-      title: z.string().nonempty(),
-      intro: z.string().nonempty(),
-      outro: z.string().nonempty(),
-      items: z.array(createIconTextItemSchema())
+        title: z.string().nonempty(),
+        intro: z.string().nonempty(),
+        outro: z.string().nonempty(),
+        items: z.array(createIconTextItemSchema())
       }),
 
       benefitsOverview: z.object({
@@ -143,7 +143,7 @@ export const collections = {
       courseDetails: z.object({
         title: z.string().nonempty(),
         items: z.array(createDetailItemSchema())
-      }),
+      })
     })
   })
 }

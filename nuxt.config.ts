@@ -1,18 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
-  app: {
-    baseURL: import.meta.env.NUXT_APP_BASE_URL || '/',
-    buildAssetsDir: '/_nuxt/'
-  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/content',
     '@nuxt/fonts'
-  ],
+  ], ssr: false,
   devtools: {
     enabled: true
+  },
+  app: {
+    baseURL: import.meta.env.NUXT_APP_BASE_URL || '/',
+    buildAssetsDir: '/_nuxt/'
   },
   css: ['~/assets/css/main.css'],
 
