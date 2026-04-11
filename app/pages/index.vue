@@ -17,14 +17,6 @@ useSeoMeta({
     v-if="page"
     class="relative"
   >
-    <div class="hidden lg:block">
-      <UColorModeImage
-        light="/images/light/line-1.svg"
-        dark="/images/dark/line-1.svg"
-        class="absolute pointer-events-none pb-10 left-0 top-0 object-cover h-[850px]"
-      />
-    </div>
-
     <MovingStickMan />
     <UPageHero
       :description="page.description"
@@ -52,6 +44,7 @@ useSeoMeta({
     <UPageSection
       :description="page.section.description"
       :features="page.section.features"
+      :title="page.section.title"
       orientation="horizontal"
       :ui="{
         container: 'lg:pr-0 lg:pl-4  mx-0 max-w-none md:mr-10 !pb-8',
@@ -59,10 +52,9 @@ useSeoMeta({
       }"
     >
       <template #title>
-        <MDC
-          :value="page.section.title"
-          class="sm:*:leading-11"
-        />
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted sm:leading-11">
+          Typische <span class="text-primary">Sorgen</span> von Eltern
+        </h2>
       </template>
       <img
         :src="page.section.images.desktop"
@@ -93,10 +85,9 @@ useSeoMeta({
 
       <template #title>
         <div class="relative z-10">
-          <MDC
-            :value="'Und wie der Kurs <span class=&quot;text-primary&quot;>hilft</span>'"
-            class="*:leading-10 sm:*:leading-11"
-          />
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted leading-10 sm:leading-11">
+            Und wie der Kurs <span class="text-primary">hilft</span>
+          </h2>
         </div>
       </template>
 
@@ -150,7 +141,7 @@ useSeoMeta({
       }"
     >
       <template #title>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-highlighted">
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-highlighted text-3xl sm:text-4xl lg:text-5xl ">
           Was euch im Kurs <span class="text-primary">erwartet</span>
         </h2>
       </template>
@@ -194,17 +185,10 @@ useSeoMeta({
       <div class="absolute rounded-full -left-10 top-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <div class="absolute rounded-full -right-10 -bottom-10 size-[300px] z-10 bg-primary opacity-30 blur-[200px]" />
       <template #title>
-        <MDC
-          :value="page.features.title"
-          class="*:leading-9"
-        />
-        <div class="hidden @min-[1020px]:block">
-          <UColorModeImage
-            light="/images/light/line-2.svg"
-            dark="/images/dark/line-2.svg"
-            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[85%]"
-          />
-        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted leading-9">
+          Spielerisch lernen -
+          <span class="text-primary">was dein Kind gewinnt</span>
+        </h2>
       </template>
       <div class="mt-0 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6 max-w-5xl mx-auto">
         <p class="text-lg sm:text-base leading-7 text-toned leading-relaxed">
@@ -230,17 +214,10 @@ useSeoMeta({
       <div class="pointer-events-none absolute -right-10 -bottom-10 size-[280px] rounded-full bg-primary/20 blur-[180px]" />
 
       <template #title>
-        <MDC
-          :value="'Kursdetails - <span class=&quot;text-primary&quot;>Motopädagogik in Feldkirchen</span>'"
-          class="*:leading-9 sm:*:leading-10"
-        />
-        <div class="hidden @min-[1020px]:block">
-          <UColorModeImage
-            light="/images/light/line-2.svg"
-            dark="/images/dark/line-2.svg"
-            class="absolute top-0 right-0 size-full transform scale-95 translate-x-[92%]"
-          />
-        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted leading-9 sm:leading-10">
+          {{ page.courseDetails.title }} -
+          <span class="text-primary">Motopädagogik in Feldkirchen</span>
+        </h2>
       </template>
 
       <template #body>
@@ -312,16 +289,11 @@ useSeoMeta({
       :description="page.testimonials.description"
       :items="page.testimonials.items"
     >
-      <template #headline>
-        <UColorModeImage
-          light="/images/light/line-5.svg"
-          dark="/images/dark/line-5.svg"
-          class="absolute -top-10 sm:top-0 right-1/2 h-24"
-        />
-      </template>
-
       <template #title>
-        <MDC :value="page.testimonials.title" />
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted">
+          Das sagen <span class="text-primary">Eltern </span> über
+          <span class="text-primary"> MotoRiki</span>
+        </h2>
       </template>
 
       <UContainer>
@@ -359,20 +331,11 @@ useSeoMeta({
       class="overflow-hidden @container"
     >
       <template #title>
-        <MDC :value="page.cta.title" />
-
-        <div class="@max-[1280px]:hidden">
-          <UColorModeImage
-            light="/images/light/line-6.svg"
-            dark="/images/dark/line-6.svg"
-            class="absolute left-0 -top-10 sm:top-0 h-full"
-          />
-          <UColorModeImage
-            light="/images/light/line-7.svg"
-            dark="/images/dark/line-7.svg"
-            class="absolute right-0 bottom-0 h-full"
-          />
-        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted">
+          Bereit für
+          <span class="text-primary">„Bewegen. Lachen. Wachsen.“</span>
+          mit deinem Kind?
+        </h2>
       </template>
 
       <LazyStarsBg />

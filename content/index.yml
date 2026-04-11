@@ -13,7 +13,7 @@ hero:
       target: _self
       size: xl
 section:
-  title: 'Typische [Sorgen]{.text-primary} von Eltern'
+  title: 'Typische Sorgen von Eltern'
   description: 'Viele Eltern kennen diese Gedanken:'
   images:
     mobile: '/images/gesicht.webp'
@@ -91,7 +91,7 @@ courseDetails:
       icon: i-lucide-receipt-text
 
 features:
-  title: "Spielerisch lernen - [was dein Kind gewinnt]{.text-primary}"
+  title: "Spielerisch lernen - was dein Kind gewinnt"
   description: "In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen - spielerisch, alltagsnah und ohne Leistungsdruck."
   summary: Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung - Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen Weg finden.
   features:
@@ -111,7 +111,7 @@ features:
       description: "Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentrationsfähigkeit und Durchhaltevermögen - eine wichtige Basis für späteres Lernen."
       icon: "i-lucide-brain"
 testimonials:
-  title: Das sagen [Eltern]{.text-primary} über [MotoRiki]{.text-primary} 
+  title: Das sagen Eltern über MotoRiki 
   items:
     - quote: Mein Sohn Noah ( 17 Monate) besucht den motopädagogischen Bewegungskurs von Riki. Riki ist eine sehr umsichtige und auch kreative Persönlichkeit. Wir fühlen uns sehr wohl und gut in ihrem Kurs aufgehoben. Auch mein Sohn Noah konnte motorisch bereits große Fortschritte machen. Mit viel Spaß an der Bewegung hat er sogar das Laufen gelernt. Ich kann diesen Kurs nur wärmsten für jede Mama mit ihrem Kleinkind weiterempfehlen!
       user:
@@ -155,7 +155,7 @@ testimonials:
         avatar:
           src: '/images/recommendation/recommendation1.webp'
 cta:
-  title: Bereit für [„Bewegen. Lachen. Wachsen.“]{.text-primary}  mit deinem Kind?
+  title: Bereit für „Bewegen. Lachen. Wachsen.“ mit deinem Kind?
   description: Wenn du das Gefühl hast, „Genau so einen Raum wünsche ich mir für mein Kind“, dann melde dich jetzt bei mir und sichere euch einen der wenigen Plätze. Klicke auf den Button unten, schreib mir kurz den Namen und das Alter deines Kindes und ob du einen Schnuppertermin oder direkt den ganzen Kurs buchen möchtest.
   links:
     - label: Jetzt Platz sichern

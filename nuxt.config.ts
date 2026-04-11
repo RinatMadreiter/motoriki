@@ -11,10 +11,14 @@ export default defineNuxtConfig({
     enabled: true
   },
   app: {
-    baseURL:  '/',
+    baseURL: '/',
     buildAssetsDir: '/_nuxt/'
   },
   css: ['~/assets/css/main.css'],
+
+  colorMode: {
+    preference: 'light'
+  },
 
   mdc: {
     highlight: {
@@ -55,9 +59,5 @@ export default defineNuxtConfig({
       weights: [400, 500, 600, 700, 800, 900],
       styles: ['normal', 'italic']
     }
-  },
-
-   colorMode: {
-    preference: 'light'
   }
 })
