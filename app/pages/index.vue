@@ -11,79 +11,6 @@ useSeoMeta({
   ogDescription: page.value.seo?.description || page.value.description
 })
 
-const courseFlow = [
-  {
-    icon: 'i-lucide-heart-handshake',
-    title: 'Ankommen & Begrüßung',
-    text: 'Ruhiger Start, jedes Kind wird persönlich willkommen geheißen - das schafft Vertrauen und Orientierung.'
-  },
-  {
-    icon: 'i-lucide-trees',
-    title: 'Bewegung & Spiel',
-    text: 'Bewegungslandschaften mit Matten, Geräten und Alltagsmaterialien laden zum Klettern, Krabbeln, Hüpfen, Balancieren, Rutschen und Bauen ein - ohne starre Übungsfolgen oder Leistungsdruck.'
-  },
-  {
-    icon: 'i-lucide-lightbulb',
-    title: 'Freies Experimentieren',
-    text: 'Die Kinder dürfen eigene Ideen einbringen, mit Materialien kreativ umgehen und spielerisch Lösungen finden - das stärkt Selbstständigkeit und Problemlösefähigkeit.'
-  },
-  {
-    icon: 'i-lucide-users',
-    title: 'Miteinander statt Gegeneinander',
-    text: 'Kooperative Spiele, gemeinsames Bauen und Ausprobieren fördern Rücksichtnahme, Helfen, Wartenkönnen und das Erleben von Gemeinschaft.'
-  },
-  {
-    icon: 'i-lucide-moon-star',
-    title: 'Ruhiger Abschluss',
-    text: 'Kleine Entspannungsübungen sowie kurze Reflexionen helfen den Kindern, das Erlebte zu verarbeiten und zur Ruhe zu kommen.'
-  }
-]
-
-const benefits = [
-  {
-    icon: 'i-lucide-shield-check',
-    title: 'Geschützter Rahmen',
-    text: 'Kinder werden in einem sicheren, wertschätzenden Umfeld begleitet und dürfen in ihrem eigenen Tempo Erfahrungen sammeln.'
-  },
-  {
-    icon: 'i-lucide-trees',
-    title: 'Spielerisches Ausprobieren',
-    text: 'Bewegungslandschaften, freies Experimentieren und kooperative Spiele fördern Motorik, Mut und den Umgang mit Frust.'
-  },
-  {
-    icon: 'i-lucide-baby',
-    title: 'Sinnvolle Struktur für 1-3 Jahre',
-    text: 'Kind-Angebote greifen den natürlichen Bewegungsdrang auf und geben gleichzeitig Sicherheit, um Neues zu wagen.'
-  }
-]
-
-const courseDetails = [
-  {
-    label: 'Ort',
-    value: 'Motopädagogische Kind-Bewegungsgruppen in Feldkirchen (genaue Adresse nach Anmeldung).',
-    icon: 'i-lucide-map-pin'
-  },
-  {
-    label: 'Alter',
-    value: 'Kinder von 1-3 Jahren.',
-    icon: 'i-lucide-baby'
-  },
-  {
-    label: 'Gruppengröße',
-    value: 'Pro Kurs maximal 8 Kinder - so bleibt genug Zeit und Raum für jedes einzelne Kind.',
-    icon: 'i-lucide-users'
-  },
-  {
-    label: 'Kursumfang',
-    value: '15 Termine / Einheiten pro Semester.',
-    icon: 'i-lucide-calendar-days'
-  },
-  {
-    label: 'Kursbeitrag',
-    value: '160 € pro Semester zum Kursauftakt.',
-    icon: 'i-lucide-receipt-text'
-  }
-]
 </script>
 
 <template>
@@ -185,7 +112,7 @@ const courseDetails = [
         <div class="relative z-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
           <ul class="space-y-4">
             <li
-              v-for="item in benefits"
+              v-for="item in page?.benefitsOverview?.items"
               :key="item.title"
               class="rounded-3xl border border-default bg-default/70 p-5 sm:p-6 shadow-sm transition hover:bg-default hover:shadow-md"
             >
@@ -253,7 +180,7 @@ const courseDetails = [
       <template #body>
         <ul class="mt-10 space-y-4">
           <li
-            v-for="item in courseFlow"
+            v-for="item in page?.courseFlow?.items"
             :key="item.title"
             class="rounded-3xl border border-default bg-default/60 p-5 sm:p-6 shadow-sm transition hover:bg-default hover:shadow-md"
           >
@@ -376,6 +303,7 @@ const courseDetails = [
 
           <!-- Details grid below image -->
           <div class="grid gap-6 lg:grid-cols-2 xl:grid-cols-3 pb-1">
+            <!-- First item: Full-width Ort card -->
             <UCard
               variant="soft"
               class="lg:col-span-1 rounded-3xl border border-default/70 bg-default/75 shadow-sm transition hover:shadow-md"
@@ -390,7 +318,7 @@ const courseDetails = [
                   </div>
                   <div>
                     <p class="text-xs uppercase tracking-[0.18em] text-muted font-bold">
-                      Ort
+                      {{ page?.courseDetails?.items?.[0]?.label }}
                     </p>
                     <p class="text-lg">
                       Feldkirchen
@@ -398,14 +326,14 @@ const courseDetails = [
                   </div>
                 </div>
                 <p class="sm:text-base leading-7 text-muted">
-                  Motopädagogische Kind-Bewegungsgruppen in Feldkirchen
-                  (genaue Adresse nach Anmeldung).
+                  {{ page?.courseDetails?.items?.[0]?.value }}
                 </p>
               </div>
             </UCard>
 
+            <!-- Rest of items: Grid cards -->
             <UCard
-              v-for="item in courseDetails.slice(1)"
+              v-for="(item, index) in page?.courseDetails?.items?.slice(1)"
               :key="item.label"
               variant="soft"
               class="rounded-3xl border border-default/70 bg-default/75 shadow-sm transition hover:shadow-md"

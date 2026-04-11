@@ -25,6 +25,68 @@ section:
       class: border-l border-primary pt-4 pb-4 pl-4
     - title: „Es ist wild, immer in Bewegung und schnell überfordert.“
       class: border-l border-primary pt-4 pb-4 pl-4
+
+courseFlow:
+  title: So läuft eine Einheit ab
+  items:
+    - icon: i-lucide-heart-handshake
+      title: Ankommen & Begrüßung
+      text: Ruhiger Start, jedes Kind wird persönlich willkommen geheißen - das schafft Vertrauen und Orientierung.
+
+    - icon: i-lucide-trees
+      title: Bewegung & Spiel
+      text: Bewegungslandschaften mit Matten, Geräten und Alltagsmaterialien laden zum Klettern, Krabbeln, Hüpfen, Balancieren, Rutschen und Bauen ein - ohne starre Übungsfolgen oder Leistungsdruck.
+
+    - icon: i-lucide-lightbulb
+      title: Freies Experimentieren
+      text: Die Kinder dürfen eigene Ideen einbringen, mit Materialien kreativ umgehen und spielerisch Lösungen finden - das stärkt Selbstständigkeit und Problemlösefähigkeit.
+
+    - icon: i-lucide-users
+      title: Miteinander statt Gegeneinander
+      text: Kooperative Spiele, gemeinsames Bauen und Ausprobieren fördern Rücksichtnahme, Helfen, Wartenkönnen und das Erleben von Gemeinschaft.
+
+    - icon: i-lucide-moon-star
+      title: Ruhiger Abschluss
+      text: Kleine Entspannungsübungen sowie kurze Reflexionen helfen den Kindern, das Erlebte zu verarbeiten und zur Ruhe zu kommen.
+
+benefitsOverview:
+  title: Was den Rahmen besonders macht
+  items:
+    - icon: i-lucide-shield-check
+      title: Geschützter Rahmen
+      text: Kinder werden in einem sicheren, wertschätzenden Umfeld begleitet und dürfen in ihrem eigenen Tempo Erfahrungen sammeln.
+
+    - icon: i-lucide-trees
+      title: Spielerisches Ausprobieren
+      text: Bewegungslandschaften, freies Experimentieren und kooperative Spiele fördern Motorik, Mut und den Umgang mit Frust.
+
+    - icon: i-lucide-baby
+      title: Sinnvolle Struktur für 1-3 Jahre
+      text: Kind-Angebote greifen den natürlichen Bewegungsdrang auf und geben gleichzeitig Sicherheit, um Neues zu wagen.
+
+courseDetails:
+  title: Kursdetails
+  items:
+    - label: Ort
+      value: Motopädagogische Kind-Bewegungsgruppen in Feldkirchen (genaue Adresse nach Anmeldung).
+      icon: i-lucide-map-pin
+
+    - label: Alter
+      value: Kinder von 1-3 Jahren.
+      icon: i-lucide-baby
+
+    - label: Gruppengröße
+      value: Pro Kurs maximal 8 Kinder - so bleibt genug Zeit und Raum für jedes einzelne Kind.
+      icon: i-lucide-users
+
+    - label: Kursumfang
+      value: 15 Termine / Einheiten pro Semester.
+      icon: i-lucide-calendar-days
+
+    - label: Kursbeitrag
+      value: 160 € pro Semester zum Kursauftakt.
+      icon: i-lucide-receipt-text
+
 features:
   title: "Spielerisch lernen - [was dein Kind gewinnt]{.text-primary}"
   description: "In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen - spielerisch, alltagsnah und ohne Leistungsdruck."
@@ -44,32 +106,13 @@ features:
     - title: "Konzentration & Ausdauer"
       description: "Abwechslungsreiche Bewegungsaufgaben, die Spaß machen, unterstützen Konzentrationsfähigkeit und Durchhaltevermögen - eine wichtige Basis für späteres Lernen."
       icon: "i-lucide-brain"
-steps:
-  title: Start coding smarter in [3 steps]{.text-primary}
-  description: Transform your development workflow with our AI-powered assistant.
-  items:
-    - title: Connect Your IDE
-      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
-      image:
-        light: '/images/light/connect.svg'
-        dark: '/images/dark/connect.svg'
-    - title: Track & Analyze
-      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
-      image:
-        light: '/images/light/optimize.svg'
-        dark: '/images/dark/optimize.svg'
-    - title: Optimize & Code Smarter
-      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
-      image:
-        light: '/images/light/track.svg'
-        dark: '/images/dark/track.svg'
 testimonials:
   title: Das sagen [Eltern]{.text-primary} über [MotoRiki]{.text-primary} 
   items:
     - quote: Mein Sohn Noah ( 17 Monate) besucht den motopädagogischen Bewegungskurs von Riki. Riki ist eine sehr umsichtige und auch kreative Persönlichkeit. Wir fühlen uns sehr wohl und gut in ihrem Kurs aufgehoben. Auch mein Sohn Noah konnte motorisch bereits große Fortschritte machen. Mit viel Spaß an der Bewegung hat er sogar das Laufen gelernt. Ich kann diesen Kurs nur wärmsten für jede Mama mit ihrem Kleinkind weiterempfehlen!
       user:
         name: 'Nadine'
-        description:  'Mutter'
+        description:  'Mutter & Kursteilnehmerin'
         target: _blank    
     - quote: Ich kenne Riki als powergeladene 4-fach Mama schon seit Geburt ihrer ersten Tochter (und davor). Sie liebt die Arbeit mit Kindern - und das merken die Kinder! Sie weiß, jedes Kind ist anders und ist bemüht auf jeden individuell einzugehen. Sie hat mir da bereits mehrfach gute Ratschläge für meine Kinder gegeben. Kinder sind für sie wertvoll und man merkt das wirklich HERZ in ihrer Arbeit steckt.
       user:
@@ -93,12 +136,12 @@ testimonials:
     - quote: Liebe Eltern, so positiv und fröhlich wie Riki auf ihrem Flyer ausschaut, so ist sie auch im Alltag und erst recht in ihren Moto-Pädagogik Einheiten! Ich bin immer wieder beeindruckt, mit welcher Wertschätzung sie jedem einzelnen Kind begegnet. Selbstverständlich ist sie ausgesprochen kompetent, dennoch achtet sie auf die spielerische Leichtigkeit und den Spaßfaktor. Sie fördert in ihren Einheiten Bewegungsabläufe und Wahrnehmung, soziale Kompetenz, unbekümmerte Interaktion und Vieles mehr. Während sie den Kindern zuschaut, nimmt sie die Kleinen ganzheitlich wahr und sieht, welche Themen sich im unbeschwerten Spiel zeigen. Diese baut sie in den nächsten Einheiten ein und erarbeitet damit eine individuelle, für diese Gruppe passende Moto-Pädagogik! Die Kinder wissen, bei der Riki macht's riesig Spaß!!! Die Eltern dürfen wissen, hier wird sich mein Kind in liebevoller, kompetenter Begleitung weiter entwickeln. Ich wünsche allen - Eltern, Kindern und Riki - wundervolle Moto-Pädagogik Einheiten.
       user:
         name: 'Silvia'
-        description:  'Mutter'
+        description:  'Mutter & Kursteilnehmerin'
         target: _blank      
     - quote: Meine Tochter liebt das Turnen bei Riki! Sie spielt zu Hause nach, was im Kurs gemacht wurde und wird dabei selbst zur kleinen Turnlehrerin. Sie hat große Freude an den Spielen und der Bewegung - klare Empfehlung unsererseits!🤗
       user:
         name: 'Alina'
-        description:  'Mutter'
+        description:  'Mutter & Kursteilnehmerin'
         target: _blank     
     - quote: Ich kann Riki von Herzen empfehlen. Sie hat ein unglaubliches Gespür für Kinder und bringt durch ihre Erfahrung als Kindergärtnerin und Mama von vier Kindern so viel Ruhe, Verständnis und Kompetenz mit. Kinder fühlen sich einfach wohl bei ihr. Ich kann sie in der Förderbegleitung nur wärmstens empfehlen.
       user:
