@@ -1,19 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/content',
     '@nuxt/fonts'
-  ], ssr: false,
+  ],
+
+  ssr: false,
+
   devtools: {
     enabled: true
   },
+
   app: {
     baseURL: '/',
     buildAssetsDir: '/_nuxt/'
   },
+
   css: ['~/assets/css/main.css'],
 
   colorMode: {
@@ -31,9 +35,7 @@ export default defineNuxtConfig({
   nitro: {
     static: true,
     prerender: {
-      routes: [
-        '/'
-      ]
+      routes: ['/']
     }
   },
 
@@ -54,6 +56,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   fonts: {
     defaults: {
       weights: [400, 500, 600, 700, 800, 900],
