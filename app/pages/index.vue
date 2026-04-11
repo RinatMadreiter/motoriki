@@ -325,36 +325,35 @@ useSeoMeta({
     <USeparator />
 
     <UPageCTA
-        id="contact"
-        :title="page.cta.title"
-        :description="page.cta.description"
-        variant="naked"
-        class="overflow-hidden @container"
-      >
-        <template #title>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted">
-            Bereit für
-            <span class="text-primary">„Bewegen. Lachen. Wachsen.“</span>
-            mit deinem Kind?
-          </h2>
-        </template>
+      id="contact"
+      :title="page.cta.title"
+      :description="page.cta.description"
+      variant="naked"
+      class="overflow-hidden @container"
+    >
+      <template #title>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-highlighted">
+          Bereit für
+          <span class="text-primary">„Bewegen. Lachen. Wachsen.“</span>
+          mit deinem Kind?
+        </h2>
+      </template>
 
-        <template #links>
-          <UButton
-            to="https://app.formbricks.com/s/cmnulg3fkj34zth01xagg6sgz"
-            target="_blank"
-            color="primary"
-            variant="solid"
-            size="xl"
-            class="!text-2xl px-8 py-3 text-base survey-btn"
-          >
-            Zur Umfrage
-          </UButton>
-        
-        </template>
+      <template #links>
+        <UButton
+          to="https://app.formbricks.com/s/cmnulg3fkj34zth01xagg6sgz"
+          target="_blank"
+          color="primary"
+          variant="solid"
+          size="xl"
+          class="!text-2xl px-8 py-3 text-base survey-btn"
+        >
+          Jetzt Platz sichern
+        </UButton>
+      </template>
 
-        <LazyStarsBg />
-      </UPageCTA>
+      <LazyStarsBg />
+    </UPageCTA>
 
     <LazyJumpingText />
   </div>
