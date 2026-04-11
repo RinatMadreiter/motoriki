@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "generate": "NODE_OPTIONS='--max-old-space-size=8192' nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
@@ -16,7 +17,6 @@
     "@iconify-json/simple-icons": "1.2.74",
     "@nuxt/content": "3.12.0",
     "@nuxt/fonts": "0.14.0",
-    "@nuxt/image": "2.0.0",
     "@nuxt/ui": "4.5.1",
     "better-sqlite3": "12.8.0",
     "nuxt": "4.4.2",
