@@ -95,15 +95,9 @@ useSeoMeta({
       </template>
 
       <template #description>
-        <div class="relative z-10 space-y-4 text-base sm:text-lg leading-8 text-muted">
-          <p>
-            In der Motopädagogik werden Kinder in einem geschützten Rahmen begleitet,
-            in dem sie in ihrem eigenen Tempo Erfahrungen sammeln dürfen.
-          </p>
-          <p>
-            Durch spielerische Bewegungslandschaften, freies Ausprobieren und
-            kooperative Spiele entwickeln Kinder nicht nur ihre Motorik, sondern auch
-            Mut, Frustrationstoleranz und soziale Sicherheit.
+        <div class="space-y-4 text-base sm:text-lg leading-8 text-muted">
+          <p v-for="(paragraph, index) in page?.intro?.paragraphs" :key="index">
+            {{ paragraph }}
           </p>
         </div>
       </template>
@@ -128,8 +122,7 @@ useSeoMeta({
             >
             <div class="p-5 sm:p-6">
               <p class="sm:text-base leading-7 text-toned">
-                Kinder erleben Bewegung als etwas Sicheres, Positives und Stärkendes -
-                ohne Leistungsdruck, aber mit viel Raum zum Lernen.
+                {{ page?.benefitsOverview?.summary }}
               </p>
             </div>
           </div>
@@ -156,8 +149,7 @@ useSeoMeta({
 
       <template #description>
         <p>
-          Jede Einheit folgt einem klaren, kindgerechten Ablauf, der Sicherheit gibt
-          und gleichzeitig viel Raum für freies Entdecken lässt.
+          {{ page?.courseFlow?.intro }}
         </p>
       </template>
 
@@ -173,9 +165,7 @@ useSeoMeta({
 
         <div class="mt-8 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6">
           <p class="sm:text-base leading-7 text-toned">
-            So entsteht ein sicherer, wertschätzender Raum, in dem Kinder lernen dürfen,
-            ohne bewertet zu werden - und in dem es kein „richtig“ oder „falsch“ gibt,
-            sondern vor allem wertvolle Erfahrungen.
+            {{ page?.courseFlow?.outro }}
           </p>
         </div>
       </template>
@@ -211,8 +201,7 @@ useSeoMeta({
       </template>
       <div class="mt-0 rounded-2xl bg-primary/5 ring-1 ring-primary/10 p-5 sm:p-6 max-w-5xl mx-auto">
         <p class="text-lg sm:text-base leading-7 text-toned leading-relaxed">
-          Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung -
-          Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen Weg finden.
+          {{ page?.features?.summary }}
         </p>
       </div>
     </UPageSection>

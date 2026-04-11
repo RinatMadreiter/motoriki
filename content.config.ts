@@ -54,6 +54,21 @@ export const collections = {
       hero: z.object({
         links: z.array(createLinkSchema())
       }),
+      intro: z.object({
+        paragraphs: z.array(z.string().nonempty())
+      }),
+
+      courseHighlights: z.array(z.string().nonempty()),
+
+      courseSummary: z.string().nonempty(),
+      movementBenefits: z.string().nonempty(),
+
+      imageCaptions: z.object({
+        turnen: z.string().nonempty(),
+        turnen2: z.string().nonempty(),
+        gesicht: z.string().nonempty()
+      }).optional(),
+
       section: createBaseSchema().extend({
         headline: z.string().optional(),
         images: z.object({
@@ -70,6 +85,7 @@ export const collections = {
         )
       }),
       features: createBaseSchema().extend({
+        summary: z.string().nonempty(),
         features: z.array(createFeatureSchema())
       }),
       steps: createBaseSchema().extend({
@@ -113,11 +129,14 @@ export const collections = {
       }),
       courseFlow: z.object({
       title: z.string().nonempty(),
+      intro: z.string().nonempty(),
+      outro: z.string().nonempty(),
       items: z.array(createIconTextItemSchema())
       }),
 
       benefitsOverview: z.object({
         title: z.string().nonempty(),
+        summary: z.string().nonempty(),
         items: z.array(createIconTextItemSchema())
       }),
 

@@ -28,6 +28,8 @@ section:
 
 courseFlow:
   title: So läuft eine Einheit ab
+  intro: Jede Einheit folgt einem klaren, kindgerechten Ablauf, der Sicherheit gibt und gleichzeitig viel Raum für freies Entdecken lässt.
+  outro: So entsteht ein sicherer, wertschätzender Raum, in dem Kinder lernen dürfen, ohne bewertet zu werden - und in dem es kein „richtig“ oder „falsch“ gibt, sondern vor allem wertvolle Erfahrungen.
   items:
     - icon: i-lucide-heart-handshake
       title: Ankommen & Begrüßung
@@ -51,6 +53,7 @@ courseFlow:
 
 benefitsOverview:
   title: Was den Rahmen besonders macht
+  summary: Kinder erleben Bewegung als etwas Sicheres, Positives und Stärkendes - ohne Leistungsdruck, aber mit viel Raum zum Lernen.
   items:
     - icon: i-lucide-shield-check
       title: Geschützter Rahmen
@@ -90,6 +93,7 @@ courseDetails:
 features:
   title: "Spielerisch lernen - [was dein Kind gewinnt]{.text-primary}"
   description: "In den 15 Kurseinheiten profitiert dein Kind auf mehreren Ebenen - spielerisch, alltagsnah und ohne Leistungsdruck."
+  summary: Alles passiert spielerisch, ohne Druck und ohne Leistungsbewertung - Kinder dürfen ausprobieren, scheitern, neu versuchen und ihren eigenen Weg finden.
   features:
     - title: "Motorische Fähigkeiten"
       description: "Klettern, Springen, Kriechen, Balancieren und Bauen schulen Grob- und Feinmotorik, Gleichgewichtssinn, Koordination und Körpergefühl."
@@ -158,3 +162,15 @@ cta:
       to: ''
       target: _blank
       trailingIcon: i-lucide-arrow-right
+
+intro:
+  paragraphs:
+    - In der Motopädagogik werden Kinder in einem geschützten Rahmen begleitet, in dem sie in ihrem eigenen Tempo Erfahrungen sammeln dürfen.
+    - Durch spielerische Bewegungslandschaften, freies Ausprobieren und kooperative Spiele entwickeln Kinder nicht nur ihre Motorik, sondern auch Mut, Frustrationstoleranz und soziale Sicherheit.
+
+movementBenefits: Spielerische Bewegung stärkt Selbstvertrauen, Koordination und Freude am Entdecken.
+
+imageCaptions:
+  turnen: Kind bewegt sich spielerisch in einer sicheren Kurssituation
+  turnen2: Kinder in sicheren Bewegungslandschaften - genau so fühlt sich der Kurs an
+  gesicht: Bild von Riki
