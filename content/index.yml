@@ -9,8 +9,8 @@ hero:
       icon: i-lucide-arrow-right
       trailing: true
       color: primary
-      to: '#contact'
-      target: _self
+      to: 'https://app.formbricks.com/s/cmnulg3fkj34zth01xagg6sgz'
+      target: _blank
       size: xl
 section:
   title: 'Typische Sorgen von Eltern'
