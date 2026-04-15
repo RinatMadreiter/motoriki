@@ -32,6 +32,9 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'MotoRiki Bewegen. Lachen. Wachsen. in Feldkirchen' },
         { property: 'og:description', content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: 'https://motoriki.at/images/preview-img.png' },
+        { name: 'twitter:image', content: 'https://motoriki.at/images/preview-img.png' },
+        { name: 'twitter:card', content: 'summary_large_image' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
