@@ -15,7 +15,25 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: '/',
-    buildAssetsDir: '/_nuxt/'
+    buildAssetsDir: '/_nuxt/',
+
+    head: {
+      title: 'MotoRiki Bewegen. Lachen. Wachsen. in Feldkirchen',
+      htmlAttrs: {
+        lang: 'de',
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          name: 'description',
+          content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.'
+        },
+        { property: 'og:title', content: 'MotoRiki Bewegen. Lachen. Wachsen. in Feldkirchen' },
+        { property: 'og:description', content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.' },
+        { property: 'og:type', content: 'website' },
+      ],
+    },
   },
 
   css: ['~/assets/css/main.css'],
