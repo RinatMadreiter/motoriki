@@ -2,4 +2,8 @@
 User-agent: *
 Allow: /
 
+# Block legal pages from being crawled
+Disallow: /impressum
+Disallow: /datenschutz
+
 Sitemap: https://motoriki.at/sitemap.xml

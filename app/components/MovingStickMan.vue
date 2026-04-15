@@ -139,7 +139,7 @@ svg#stickman.animate {
   }
 
   to {
-    transform: translateX(-62vw) rotate(-191deg);
+    transform: translateX(-62vw) rotate(-800deg);
   }
 }
 </style>

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
+const route = useRoute()
+
+const isHomePage = computed(() => route.path === '/')
 
 const items = computed(() => [{
   label: 'Vorteile',
@@ -16,12 +19,25 @@ const items = computed(() => [{
   active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
 }])
 
+const legalItems = computed(() => [{
+  label: 'Impressum',
+  to: '/impressum',
+  active: route.path === '/impressum'
+}, {
+  label: 'Datenschutz',
+  to: '/datenschutz',
+  active: route.path === '/datenschutz'
+}])
+
+// Only initialize scrollspy if we are on the homepage
 nuxtApp.hooks.hookOnce('page:finish', () => {
-  updateHeadings([
-    document.querySelector('#vorteile'),
-    document.querySelector('#details'),
-    document.querySelector('#testimonials')
-  ].filter(Boolean) as Element[])
+  if (isHomePage.value) {
+    updateHeadings([
+      document.querySelector('#vorteile'),
+      document.querySelector('#details'),
+      document.querySelector('#testimonials')
+    ].filter(Boolean) as Element[])
+  }
 })
 </script>
 
@@ -33,7 +49,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       </NuxtLink>
     </template>
 
-    <template #right>
+    <template #right v-if="isHomePage">
       <UNavigationMenu
         :items="items"
         variant="link"
@@ -51,7 +67,17 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <UColorModeButton />
     </template>
 
-    <template #body>
+    <template #right v-else>
+      <UNavigationMenu
+        :items="legalItems"
+        variant="link"
+        class="hidden lg:block"
+      />
+
+      <UColorModeButton />
+    </template>
+
+    <template #body v-if="isHomePage">
       <UNavigationMenu
         :items="items"
         orientation="vertical"
@@ -61,8 +87,16 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         class="mt-4"
         label="Jetzt Platz sichern"
         variant="subtle"
-        to="#contact"
+        to="https://app.formbricks.com/s/cmnulg3fkj34zth01xagg6sgz"
         block
+      />
+    </template>
+
+    <template #body v-else>
+      <UNavigationMenu
+        :items="legalItems"
+        orientation="vertical"
+        class="-mx-2.5"
       />
     </template>
   </UHeader>

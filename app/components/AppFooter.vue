@@ -17,6 +17,7 @@
     </template>
 
     <template #left>
+      <div class="flex items-center gap-3">
       <UButton
         to="https://www.instagram.com/motoriki.fe/"
         target="_blank"
@@ -25,6 +26,22 @@
         color="neutral"
         variant="ghost"
       />
+      <span class="w-px h-4 bg-gray-200 dark:bg-gray-800 mx-1"></span>
+
+        <NuxtLink 
+          to="/impressum" 
+          class="tracking-wider hover:text-primary-500 transition-colors"
+        >
+          Impressum
+        </NuxtLink>
+
+        <NuxtLink 
+          to="/datenschutz" 
+          class="tracking-wider hover:text-primary-500 transition-colors"
+        >
+          Datenschutz
+        </NuxtLink>
+      </div>
     </template>
   </UFooter>
 </template>
