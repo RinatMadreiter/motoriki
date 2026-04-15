@@ -1,0 +1,5 @@
+# General rules for all search engines
+User-agent: *
+Allow: /
+
+Sitemap: https://motoriki.at/sitemap.xml
