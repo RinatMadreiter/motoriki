@@ -33,6 +33,9 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.' },
         { property: 'og:type', content: 'website' },
       ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
     },
   },
 
