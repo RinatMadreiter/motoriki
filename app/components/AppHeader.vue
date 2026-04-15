@@ -88,6 +88,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         label="Jetzt Platz sichern"
         variant="subtle"
         to="https://app.formbricks.com/s/cmnulg3fkj34zth01xagg6sgz"
+        target="_blank"
         block
       />
     </template>
