@@ -164,9 +164,8 @@ cta:
       trailingIcon: i-lucide-arrow-right
 
 intro:
-  paragraphs:
-    - In der Motopädagogik werden Kinder in einem geschützten Rahmen begleitet, in dem sie in ihrem eigenen Tempo Erfahrungen sammeln dürfen.
-    - Durch spielerische Bewegungslandschaften, freies Ausprobieren und kooperative Spiele entwickeln Kinder nicht nur ihre Motorik, sondern auch Mut, Frustrationstoleranz und soziale Sicherheit.
+  paragraph: >
+    In der Motopädagogik werden Kinder in einem geschützten Rahmen begleitet, in dem sie in ihrem eigenen Tempo Erfahrungen sammeln dürfen. Durch spielerische Bewegungslandschaften, freies Ausprobieren und kooperative Spiele entwickeln Kinder nicht nur ihre Motorik, sondern auch Mut, Frustrationstoleranz und soziale Sicherheit.
 
 imageCaptions:
   turnen: Kind bewegt sich spielerisch in einer sicheren Kurssituation

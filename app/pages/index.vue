@@ -93,12 +93,9 @@ useSeoMeta({
       </template>
 
       <template #description>
-        <div class="space-y-4 text-base sm:text-lg leading-8 text-muted">
-          <p
-            v-for="(paragraph, index) in page?.intro?.paragraphs"
-            :key="index"
-          >
-            {{ paragraph }}
+        <div class="space-y-4 text-base sm:text-lg leading-8">
+          <p class="text-balance">
+            {{ page.intro.paragraph }}
           </p>
         </div>
       </template>

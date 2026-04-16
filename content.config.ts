@@ -55,7 +55,7 @@ export const collections = {
         links: z.array(createLinkSchema())
       }),
       intro: z.object({
-        paragraphs: z.array(z.string().nonempty())
+        paragraph: z.string().nonempty()
       }),
 
       courseHighlights: z.array(z.string().nonempty()),

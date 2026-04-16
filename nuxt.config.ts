@@ -83,6 +83,7 @@ export default defineNuxtConfig({
 
   fonts: {
     defaults: {
+      preload: true,
       weights: [400, 500, 600, 700, 800, 900],
       styles: ['normal', 'italic']
     }
