@@ -27,10 +27,10 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.'
+          content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1-3 Jahren - spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.'
         },
         { property: 'og:title', content: 'MotoRiki Bewegen. Lachen. Wachsen. in Feldkirchen' },
-        { property: 'og:description', content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1–3 Jahren – spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.' },
+        { property: 'og:description', content: 'Motopädagogische Bewegungsgruppe in Feldkirchen für Kinder von 1-3 Jahren - spielerisch Motorik, Selbstvertrauen und Sozialverhalten stärken.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: 'https://motoriki.at/images/preview-img.png' },
         { name: 'twitter:image', content: 'https://motoriki.at/images/preview-img.png' },
@@ -83,8 +83,8 @@ export default defineNuxtConfig({
 
   fonts: {
     defaults: {
-      preload: true,
-      weights: [400, 500, 600, 700, 800, 900],
+      preload: false,
+      weights: [400, 500, 600, 700, 900],
       styles: ['normal', 'italic']
     }
   }
